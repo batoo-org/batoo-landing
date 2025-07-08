@@ -1,0 +1,108 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+
+@font-face {
+	font-family: 'Bricolage Grotesque';
+	src: local('Bricolage Grotesque'),
+		url('/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: local('Inter'), url('/fonts/Inter/Inter-VariableFont_opsz,wght.ttf');
+	font-display: swap;
+}
+
+:root {
+	/* Primary Colors */
+	--color-primary-50: #ebf4ff;
+	--color-primary-100: #daebff;
+	--color-primary-200: #bdd8ff;
+	--color-primary-300: #95bcff;
+	--color-primary-400: #6b95ff;
+	--color-primary-500: #486eff;
+	--color-primary-600: #2842ff;
+	--color-primary-700: #1d33e5;
+	--color-primary-800: #1a2db9;
+	--color-primary-900: #1e2e91;
+	--color-primary-950: #121a54;
+
+	/* Accent Colors */
+	--color-accent-50: #edfaff;
+	--color-accent-100: #d6f3ff;
+	--color-accent-200: #b5ebff;
+	--color-accent-300: #83e1ff;
+	--color-accent-400: #48ceff;
+	--color-accent-500: #1eb0ff;
+	--color-accent-600: #0693ff;
+	--color-accent-700: #007fff;
+	--color-accent-800: #0861c5;
+	--color-accent-900: #0d549b;
+	--color-accent-950: #0e335d;
+
+	/* Neutral Colors */
+	--color-neutral-50: #f6f6f6;
+	--color-neutral-100: #e7e7e7;
+	--color-neutral-200: #d1d1d1;
+	--color-neutral-300: #b0b0b0;
+	--color-neutral-400: #888888;
+	--color-neutral-500: #666666;
+	--color-neutral-600: #5d5d5d;
+	--color-neutral-700: #4f4f4f;
+	--color-neutral-800: #454545;
+	--color-neutral-900: #3d3d3d;
+	--color-neutral-950: #000000;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	-webkit-tap-highlight-color: transparent;
+	background-color: #f5faff;
+	font-family: 'Inter';
+	color: #000000;
+}
+h1 {
+	font-size: 3.5rem;
+	font-weight: 500;
+	font-family: 'Bricolage Grotesque';
+}
+h2 {
+	font-size: 3rem;
+	font-weight: 500;
+	font-family: 'Bricolage Grotesque';
+}
+h3 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	font-family: 'Bricolage Grotesque';
+}
+h4 {
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: 'Bricolage Grotesque';
+}
+h5 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-family: 'Bricolage Grotesque';
+}
+h6 {
+	font-size: 1.25rem;
+	font-weight: 500;
+	font-family: 'Bricolage Grotesque';
+}
+
+* {
+	outline: none;
+}
+
+/* NUMBER INPUT REMOVE ARROWS */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}

@@ -1,0 +1,52 @@
+name: Batoo FE Prod
+
+
+on:
+    push:
+        branches: [prod]
+        paths: ['packages/landing/**', 'yarn.lock', '.github/workflows/deploy_landing_prod.yml']
+
+env:
+    AWS_ACCOUNT: 201448095557
+    ROLE_SESSION_NAME: 'Batoo_Landing_prod'
+    GitHub_OIDC: batoo-fe-oidc-role
+    WORKSPACE: '@batoo/landing'
+
+permissions:
+    id-token: write
+    contents: read
+
+jobs:
+    deployment:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Git clone the repository
+              uses: actions/checkout@v3
+
+            - name: Deduce environment
+              id: deduce-environment
+              run: |
+                  echo "ENVIRONMENT=prod" >> $GITHUB_OUTPUT
+                  echo "AWS_REGION=eu-west-1" >> $GITHUB_OUTPUT
+            - name: Setup node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20.12.0
+            - name: Install dependencies
+              run: |
+                  yarn workspaces focus ${{ env.WORKSPACE }}
+                  yarn --immutable
+              env:
+                  EFEBIA_COM_NPM_TOKEN: ${{ secrets.EFEBIA_COM_NPM_TOKEN }}
+            - name: Configure aws credentials
+              uses: aws-actions/configure-aws-credentials@v1
+              with:
+                  role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT }}:role/${{ env.GitHub_OIDC }}
+                  role-session-name: ${{ env.ROLE_SESSION_NAME }}
+                  aws-region: ${{ steps.deduce-environment.outputs.AWS_REGION }}
+            - name: Build
+              run: |
+                  yarn workspace ${{ env.WORKSPACE }} build:${{steps.deduce-environment.outputs.ENVIRONMENT}}
+              env:
+                  EFEBIA_COM_NPM_TOKEN: ${{ secrets.EFEBIA_COM_NPM_TOKEN }}
