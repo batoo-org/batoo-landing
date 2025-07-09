@@ -8,11 +8,8 @@
 	import JoinWaitlist from '$components/hero/JoinWaitlist.svelte';
 	import SlideBoats from '$components/hero/SlideBoats.svelte';
 	import BatooLogo from '$components/svg/BatooLogo.svelte';
-	
 
 	let email = '';
-
-	
 </script>
 
 <section class="relative flex min-h-screen flex-col overflow-hidden">
@@ -28,7 +25,9 @@
 		<div class="relative z-10 my-auto flex w-full flex-col-reverse gap-5 lg:flex-row lg:gap-20">
 			<div class="flex flex-col py-3 text-white lg:flex-1">
 				<h1 class="text-[2.75rem] leading-none lg:text-[5rem]">Where the boat show never ends</h1>
-				<h6 class="mt-4 lg:text-2xl">Discover, compare, and connect with shipyards, brokers and private sellers to find your dream boat—all in one place.
+				<h6 class="mt-4 lg:text-2xl">
+					Discover, compare, and connect with shipyards, brokers and private sellers to find your dream
+					boat—all in one place.
 				</h6>
 				<JoinWaitlist />
 			</div>
@@ -47,55 +46,58 @@
 	</div>
 </section>
 
-<section class="relative w-full overflow-hidden bg-gradient-to-b from-primary-50/40 to-white py-28">
-	<div class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 gap-20 px-6 lg:grid-cols-2 lg:gap-28 lg:px-12">
-	  <!-- COLONNA TESTO -->
-	  <div class="space-y-10">
-		<h2 class="text-4xl font-extrabold leading-tight text-primary-950 md:text-6xl">
-		  La Tua Porta d’Ingresso <br class="hidden md:block" />
-		  <span class="whitespace-nowrap">al Mondo della Nautica</span>
-		</h2>
-  
-		<p class="text-lg md:text-xl text-primary-800">
-		  Batoo ti permette di esplorare e confrontare facilmente migliaia di modelli attraverso una piattaforma semplice e intuitiva.
-		  Grazie ai filtri intelligenti basati su intelligenza artificiale, potrai personalizzare la tua ricerca per trovare la barca perfetta per te.
-		</p>
-  
-		<h3 class="text-2xl font-semibold text-primary-900 md:text-3xl">Contatta Tutti in Pochi Click</h3>
-		<p class="text-lg md:text-xl text-primary-800">
-		  Richiedi informazioni e mettiti in contatto con cantieri, broker e utenti privati in modo rapido e senza complicazioni.
-		</p>
-	  </div>
-  
-	  <!-- COLONNA VIDEO -->
-	  <div class="relative flex justify-center lg:justify-end">
-		<div class="aspect-video w-full max-w-xl overflow-hidden rounded-3xl bg-white/60 backdrop-blur-sm shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] ring-2 ring-primary-100/50 lg:-translate-y-8">
-		  <video
-			src="assets/preview.mp4"
-			autoplay
-			loop
-			muted
-			playsinline
-			class="h-full w-full object-cover"
-		  ></video>
+<section class="from-primary-50/40 relative w-full overflow-hidden bg-gradient-to-b to-white py-28">
+	<div class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 gap-20 px-6 lg:grid-cols-2 lg:gap-40 lg:px-12">
+		<!-- COLONNA TESTO -->
+		<div class="space-y-10">
+			<h2 class="text-4xl font-extrabold leading-tight text-primary-950 md:text-6xl">
+				La Tua Porta d’Ingresso <br class="hidden md:block" />
+				<span class="whitespace-nowrap">al Mondo della Nautica</span>
+			</h2>
+
+			<p class="text-lg text-primary-800 md:text-xl">
+				Batoo ti permette di esplorare e confrontare facilmente migliaia di modelli attraverso una piattaforma
+				semplice e intuitiva. Grazie ai filtri intelligenti basati su intelligenza artificiale, potrai
+				personalizzare la tua ricerca per trovare la barca perfetta per te.
+			</p>
+
+			<h3 class="text-2xl font-semibold text-primary-900 md:text-3xl">Contatta Tutti in Pochi Click</h3>
+			<p class="text-lg text-primary-800 md:text-xl">
+				Richiedi informazioni e mettiti in contatto con cantieri, broker e utenti privati in modo rapido e senza
+				complicazioni.
+			</p>
 		</div>
-	  </div>
+
+		<!-- COLONNA VIDEO -->
+		<div class="relative flex justify-center lg:justify-end">
+			<div
+				class="ring-primary-100/50 aspect-video w-full max-w-xl overflow-hidden rounded-3xl bg-white/60 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] ring-2 backdrop-blur-sm lg:-translate-y-8"
+			>
+				<video src="assets/preview.mp4" autoplay loop muted playsinline class="h-full w-full object-cover"
+				></video>
+			</div>
+		</div>
 	</div>
-  
+
 	<!-- ONDA DECORATIVA -->
-	<svg aria-hidden="true" viewBox="0 0 800 600" class="pointer-events-none absolute -left-32 bottom-0 w-[800px] fill-primary-50">
-	  <path d="M0 300 C200 200 400 400 800 300 L800 600 L0 600 Z" />
+	<svg
+		aria-hidden="true"
+		viewBox="0 0 800 600"
+		class="pointer-events-none absolute bottom-0 left-0 w-full fill-primary-50"
+	>
+		<path d="M0 300 C200 200 400 400 800 300 L800 600 L0 600 Z" />
 	</svg>
-  </section>
-  
+</section>
 
 <section class="relative overflow-hidden px-4 pb-32 pt-12 text-center lg:px-12 lg:pb-24 lg:pt-20 lg:text-left">
 	<div class="flex max-w-[66rem] flex-col gap-6 font-heading leading-tight text-primary-950">
-		<span class="text-[1.25rem] lg:text-[2.5rem]" use:animateOnScroll={{ delay: 0 }}>
-			Batoo <span class="font-bold">connects users with shipyards through an user-friendly platform</span> to explore and compare all available boats.
+		<span class="text-[1.25rem] lg:text-[2.5rem]">
+			Batoo <span class="font-bold">connects users with shipyards through an user-friendly platform</span> to explore
+			and compare all available boats.
 		</span>
-		<span class="text-[1.125rem] lg:text-[2rem]" use:animateOnScroll={{ delay: 200 }}>
-			With AI-powered filters, users can effortlessly refine their search by detailed specifications to find their perfect boat.
+		<span class="text-[1.125rem] lg:text-[2rem]">
+			With AI-powered filters, users can effortlessly refine their search by detailed specifications to find their
+			perfect boat.
 		</span>
 	</div>
 	<img class="absolute bottom-0 right-0 lg:-right-40 lg:h-full" src="assets/boat.svg" alt="" />
@@ -163,50 +165,55 @@
 
 <!-- Sezione vantaggi -->
 <section class="relative w-full overflow-hidden bg-gradient-to-b from-white to-primary-50 py-24">
-  <!-- Decorative Logo -->
+	<!-- Decorative Logo -->
 	<BatooLogo
-	  class="pointer-events-none absolute -right-48 top-1/2 hidden -translate-y-1/2 opacity-15 lg:block lg:w-[640px]"
-	  style="background: linear-gradient(180deg, #007FFF 0%, #FFFFFF 100%);"
+		class="pointer-events-none absolute -right-48 top-1/2 hidden -translate-y-1/2 opacity-15 lg:block lg:w-[640px]"
+		style="background: linear-gradient(180deg, #007FFF 0%, #FFFFFF 100%);"
 	/>
-  <!-- Content -->
-  <div class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-12">
-    <!-- Copy -->
-    <div class="space-y-8">
-      <h2 class="flex flex-wrap items-center gap-3 text-3xl font-extrabold leading-tight text-primary-950 md:text-5xl">
-        <span>Are you a broker?</span>
-        <br class="hidden lg:block" />
-        <span>List your boats on&nbsp;<span class="text-primary-800">Batoo</span>.</span>
-      </h2>
+	<!-- Content -->
+	<div
+		class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-12"
+	>
+		<!-- Copy -->
+		<div class="space-y-8">
+			<h2
+				class="flex flex-wrap items-center gap-3 text-3xl font-extrabold leading-tight text-primary-950 md:text-5xl"
+			>
+				<span>Are you a broker?</span>
+				<br class="hidden lg:block" />
+				<span>List your boats on&nbsp;<span class="text-primary-800">Batoo</span>.</span>
+			</h2>
 
-      <p class="text-lg text-base md:text-xl">
-        The first platform where users can discover, compare, and connect with top shipyards and brokers—all in one place.
-      </p>
+			<p class="text-base text-lg md:text-xl">
+				The first platform where users can discover, compare, and connect with top shipyards and brokers—all in
+				one place.
+			</p>
 
-      <ul class="space-y-3 text-base md:text-lg">
-        <li><b>Free visibility:</b> Showcase your boats to the right audience.</li>
-        <li><b>Direct leads:</b> Receive inquiries without intermediaries.</li>
-        <li><b>Easy uploads:</b> Add your listings in just a few clicks or via API integration.</li>
-        <li><b>Smart comparison:</b> Your boats will be easy to compare for users.</li>
-      </ul>
+			<ul class="space-y-3 text-base md:text-lg">
+				<li><b>Free visibility:</b> Showcase your boats to the right audience.</li>
+				<li><b>Direct leads:</b> Receive inquiries without intermediaries.</li>
+				<li><b>Easy uploads:</b> Add your listings in just a few clicks or via API integration.</li>
+				<li><b>Smart comparison:</b> Your boats will be easy to compare for users.</li>
+			</ul>
 
-      <div>
-        <div class="mb-2 font-semibold text-base">How It Works:</div>
-        <ol class="list-decimal list-inside space-y-1 text-base md:text-lg text-base">
-			<li>Sign up for free</li>
-          <li>Upload your listings or connect via API</li>
-          <li>Get direct requests from buyers</li>
-        </ol>
-      </div>
-
-      
-    </div>
-
-     <!-- Visual -->
-	 <div class="relative hidden justify-center lg:flex">
-		<div class="aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-primary-200 shadow-md backdrop-blur-sm">
-		  <img src="assets/broker.jpg" alt="Boat showcase" class="h-full w-full object-cover" />
+			<div>
+				<div class="mb-2 text-base font-semibold">How It Works:</div>
+				<ol class="list-inside list-decimal space-y-1 text-base text-base md:text-lg">
+					<li>Sign up for free</li>
+					<li>Upload your listings or connect via API</li>
+					<li>Get direct requests from buyers</li>
+				</ol>
+			</div>
 		</div>
-	  </div>
+
+		<!-- Visual -->
+		<div class="relative hidden justify-center lg:flex">
+			<div
+				class="aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-primary-200 shadow-md backdrop-blur-sm"
+			>
+				<img src="assets/broker.jpg" alt="Boat showcase" class="h-full w-full object-cover" />
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -230,7 +237,8 @@
 			/>
 			<button
 				class="basis-1/2 rounded-full bg-black px-4 py-3 text-center text-white disabled:opacity-50"
-				disabled={!email}>Join Waitlist</button>
+				disabled={!email}>Join Waitlist</button
+			>
 		</div>
 	</div>
 </section>
