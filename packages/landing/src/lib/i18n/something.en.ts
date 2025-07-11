@@ -71,13 +71,13 @@ const en = {
 
   // Pillar section
   pillar1_title: 'Boat Show, All Year Long',
-  pillar1_desc: 'Access a <b>constantly updated digital catalog</b> of boats, anytime, anywhere.',
+  pillar1_desc: 'Access a constantly updated digital catalog of boats, anytime, anywhere.',
   pillar2_title: 'Completely Free Markletplace',
-  pillar2_desc: 'Batoo is <b>free for everyone</b>: users, enthusiasts, and brokers can explore, post, and connect at no cost.',
+  pillar2_desc: 'Batoo is free for everyone: users, enthusiasts, and brokers can explore, post, and connect at no cost.',
   pillar3_title: 'AI-Powered Experience',
-  pillar3_desc: 'Find the perfect boat with <b>smart filters</b> and <b>personalized suggestions</b> based on your preferences.',
+  pillar3_desc: 'Find the perfect boat with smart filters and personalized suggestions based on your preferences.',
   pillar4_title: 'Intelligent Comparator',
-  pillar4_desc: '<b>Compare up to 4 boats</b> side by side and instantly spot the differences.',
+  pillar4_desc: 'Compare up to 4 boats side by side and instantly spot the differences.',
 
   // SlideBoats
   slide_shipyard_model: 'Shipyard | Model',

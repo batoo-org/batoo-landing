@@ -71,13 +71,13 @@ const it = {
 
   // Pillar section
   pillar1_title: 'Salone Nautico Sempre Aggiornato',
-  pillar1_desc: 'Accedi a un <b>catalogo digitale di barche</b> sempre aggiornato, tutto l’anno, ovunque tu sia.',
+  pillar1_desc: 'Accedi a un catalogo digitale di barche sempre aggiornato, tutto l\'anno, ovunque tu sia.',
   pillar2_title: 'Markletplace Completamente Gratuito',
-  pillar2_desc: 'Batoo è <b>gratis per tutti</b>: utenti, appassionati e broker possono esplorare, pubblicare e contattare senza costi.',
+  pillar2_desc: 'Batoo è gratis per tutti: utenti, appassionati e broker possono esplorare, pubblicare e contattare senza costi.',
   pillar3_title: 'Esperienza Avanzata con Intelligenza Artificiale',
-  pillar3_desc: 'Trova la barca perfetta grazie a <b>filtri intelligenti</b> e <b>suggerimenti personalizzati</b> basati sulle tue preferenze.',
+  pillar3_desc: 'Trova la barca perfetta grazie a filtri intelligenti e suggerimenti personalizzati basati sulle tue preferenze.',
   pillar4_title: 'Comparatore Intelligente',
-  pillar4_desc: '<b>Confronta fino a 4 barche</b> fianco a fianco e scopri subito le differenze tra le caratteristiche.',
+  pillar4_desc: 'Confronta fino a 4 barche fianco a fianco e scopri subito le differenze tra le caratteristiche.',
 
   // SlideBoats
   
