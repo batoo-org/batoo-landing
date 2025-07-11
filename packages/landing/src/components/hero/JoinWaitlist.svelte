@@ -1,8 +1,20 @@
 <script lang="ts">
+	import en from '$lib/i18n/something.en';
+	import it from '$lib/i18n/something.it';
+	import { browser } from '$app/environment';
 	let email = '';
+	let role = 'user';
+	let lang: 'en' | 'it' = 'en';
+	const translations = { en, it };
+	if (browser) {
+		const browserLang = navigator.language.toLowerCase();
+		lang = browserLang.startsWith('it') ? 'it' : 'en';
+	}
 </script>
 
-<div class="wrapper mt-8 w-full bg-white bg-no-repeat px-4 pb-4 pt-6 text-black lg:mt-20 lg:pt-4">
+<div
+	class="wrapper mt-8 w-full rounded-xl bg-white bg-no-repeat px-4 pb-4 pt-6 text-black lg:mt-20 lg:rounded-3xl lg:pt-4"
+>
 	<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
 		<defs>
 			<clipPath id="join-waitlist" clipPathUnits="objectBoundingBox">
@@ -17,21 +29,45 @@
 			</clipPath>
 		</defs>
 	</svg>
-	<span class="text-xl font-medium">Your Email</span>
+	<span class="text-xl font-medium">{translations[lang].joinwaitlist_title}</span>
 	<div class="mt-4 flex w-full flex-col justify-between gap-4 md:flex-row">
-		<input
-			type="email"
-			class="w-full rounded-full border border-black border-opacity-50 px-4 py-2 md:w-1/2"
-			placeholder="Enter your email"
-			bind:value={email}
-		/>
+		<div class="relative flex w-full flex-col gap-2 md:w-1/2">
+			<label class="text-sm font-medium" for="role">{translations[lang].joinwaitlist_role_label}</label>
+			<div class="relative">
+				<select
+					id="role"
+					class="w-full appearance-none rounded-full border border-accent-700 bg-white px-4 py-2 pr-10 text-black shadow-sm transition-all duration-200 focus:border-accent-700 focus:outline-none focus:ring-2 focus:ring-accent-700"
+					bind:value={role}
+				>
+					<option value="user">{translations[lang].joinwaitlist_role_user}</option>
+					<option value="private">{translations[lang].joinwaitlist_role_private}</option>
+					<option value="broker">{translations[lang].joinwaitlist_role_broker}</option>
+					<option value="shipyard">{translations[lang].joinwaitlist_role_shipyard}</option>
+				</select>
+				<svg
+					class="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-accent-700"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					viewBox="0 0 24 24"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+				</svg>
+			</div>
+			<input
+				type="email"
+				class="w-full rounded-full border border-accent-700 bg-white px-4 py-2 text-black shadow-sm transition-all duration-200 placeholder:text-neutral-500 focus:border-accent-700 focus:outline-none focus:ring-2 focus:ring-accent-700"
+				placeholder={translations[lang].joinwaitlist_placeholder}
+				bind:value={email}
+			/>
+		</div>
 		<div class="flex items-center gap-[3px]">
 			<div class="flex h-9 w-9 rounded-full bg-black">
 				<img src="icons/arrow.svg" class="m-auto w-4" alt="" />
 			</div>
 			<button
 				class="grow rounded-full bg-black px-6 py-3 text-center text-white disabled:opacity-50 md:grow-0"
-				disabled={!email}>Join Waitlist</button
+				disabled={!email || !role}>{translations[lang].joinwaitlist_button}</button
 			>
 		</div>
 	</div>

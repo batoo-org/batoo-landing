@@ -1,27 +1,27 @@
 const it = {
   // Hero section
-  hero_title: 'Dove lo show nautico non finisce mai',
-  hero_subtitle: 'Scopri, confronta e connettiti con cantieri, broker e privati per trovare la barca dei tuoi sogni, tutto in un unico posto.',
-  waitlist_button: "Iscriviti alla lista d'attesa",
-  
-  // Section 1 - Gateway
-  section1_title: "La tua porta d'ingresso al mondo della nautica",
-  section1_text: 'Batoo ti permette di esplorare e confrontare facilmente migliaia di modelli attraverso una piattaforma semplice e intuitiva. Grazie ai filtri intelligenti basati su intelligenza artificiale, potrai personalizzare la tua ricerca per trovare la barca perfetta per te.',
-  section1_subtitle: 'Contatta tutti in pochi click',
-  section1_subtitle_text: 'Richiedi informazioni e mettiti in contatto con cantieri, broker e utenti privati in modo rapido e senza complicazioni.',
-  
-  // Section 2 - Platform description
-  section2_text1: 'Batoo connette gli utenti con i cantieri attraverso una piattaforma user-friendly per esplorare e confrontare tutte le barche disponibili.',
-  section2_text2: "Con i filtri basati sull'intelligenza artificiale, gli utenti possono affinare facilmente la loro ricerca per specifiche dettagliate per trovare la barca perfetta.",
-  
+  hero_title: 'Il Salone Nautico che non finisce mai',
+  hero_subtitle: 'Scopri, confronta e contatta cantieri, broker e privati: la barca dei tuoi sogni ti aspetta qui.',
+  waitlist_button: 'Unisciti alla waiting list',
+
+  // Section 1 – Gateway
+  section1_title: 'La tua porta d’ingresso al mondo della nautica',
+  section1_text: 'Esplora e confronta migliaia di modelli -nuovi o usati- su una piattaforma intuitiva. I filtri intelligenti ti guidano verso la barca perfetta e ti permettono di comprare o vendere l’usato in pochi clic.',
+  section1_subtitle: 'Contatta tutti in pochi clic',
+  section1_subtitle_text: 'Parla con cantieri, broker e privati in un attimo, senza complicazioni.',
+
+  // Section 2 – Platform description
+  section2_text1: 'Batoo mette in contatto utenti e cantieri su una piattaforma facile da usare, dove puoi esplorare e confrontare ogni barca disponibile.',
+  section2_text2: 'I filtri basati su AI affinano la ricerca nei minimi dettagli per farti trovare l’imbarcazione ideale.',
+
   // Contact section
-  contact_title: 'Contatta cantieri e broker facilmente.',
-  contact_text: 'Ora è molto più facile mettersi in contatto con cantieri e broker e conoscere tutte le informazioni.',
-  
+  contact_title: 'Contatta cantieri e broker in un clic.',
+  contact_text: 'Ottieni subito tutte le informazioni che ti servono: bastano pochi clic per iniziare la conversazione.',
+
   // Compare section
-  compare_title: 'Confrontare le barche è ora semplice con Batoo',
-  compare_text: 'Puoi confrontare fino a 4 barche diverse, aiutandoti a scegliere la migliore per te.',
-  
+  compare_title: 'Confrontare le barche non è mai stato così facile',
+  compare_text: 'Metti a confronto fino a 4 imbarcazioni e scegli quella perfetta per te.',
+
   // Features table
   features: 'Caratteristiche',
   boat1: 'Barca 1',
@@ -29,35 +29,78 @@ const it = {
   length: 'Lunghezza',
   beam: 'Larghezza',
   capacity: 'Capacità',
-  length_value1: '15 mt',
-  length_value2: '14 mt',
-  beam_value1: '4,5 mt',
-  beam_value2: '5 mt',
+  length_value1: '15 m',
+  length_value2: '14 m',
+  beam_value1: '5 m',
+  beam_value2: '4,5 m',
   capacity_value1: 'Fino a 18',
   capacity_value2: 'Fino a 14',
-  
+
   // Broker section
   broker_title: 'Sei un broker?',
-  broker_subtitle: 'Lista le tue barche su Batoo.',
-  broker_description: 'La prima piattaforma dove gli utenti possono scoprire, confrontare e connettersi con i migliori cantieri e broker, tutto in un unico posto.',
-  broker_benefit1: 'Visibilità gratuita: Mostra le tue barche al pubblico giusto.',
-  broker_benefit2: 'Lead diretti: Ricevi richieste senza intermediari.',
-  broker_benefit3: 'Caricamenti facili: Aggiungi i tuoi annunci in pochi click o tramite integrazione API.',
-  broker_benefit4: 'Confronto intelligente: Le tue barche saranno facili da confrontare per gli utenti.',
+  broker_subtitle: 'Pubblica le tue barche su Batoo.',
+  broker_description: 'La piattaforma dove gli utenti scoprono, confrontano e contattano i migliori cantieri e broker, tutto in un unico posto.',
+  broker_benefit1: 'Visibilità gratuita: mostra le tue barche al pubblico giusto.',
+  broker_benefit2: 'Lead diretti: ricevi richieste senza intermediari.',
+  broker_benefit3: 'Caricamento facile: pubblica gli annunci in pochi clic o via API.',
+  broker_benefit4: 'Confronto smart: le tue barche saranno facili da paragonare.',
   how_it_works: 'Come funziona:',
-  how_it_works_step1: 'Iscriviti gratuitamente',
-  how_it_works_step2: 'Carica i tuoi annunci o connetti tramite API',
-  how_it_works_step3: 'Ricevi richieste dirette dai compratori',
-  
+  how_it_works_step1: 'Iscriviti come broker',
+  how_it_works_step2: 'Carica gli annunci gratuitamente',
+  how_it_works_step3: 'Ricevi richieste dirette dai buyer',
+
   // Waitlist section
-  more_coming: 'Altre funzionalità in arrivo.',
-  stay_on_board: 'Rimani a bordo - Non perdere il lancio!',
+  more_coming: 'Molto altro in arrivo.',
+  stay_on_board: 'Rimani a bordo: non perdere il lancio!',
   email_placeholder: 'Inserisci la tua email',
-  
+
+  // JoinWaitlist
+  joinwaitlist_title: 'La tua email',
+  joinwaitlist_placeholder: 'Inserisci la tua email',
+  joinwaitlist_button: 'Unisciti alla waiting list',
+  joinwaitlist_role_label: 'Sono un:',
+  joinwaitlist_role_user: 'Appassionato di nautica',
+  joinwaitlist_role_private: 'Venditore privato',
+  joinwaitlist_role_broker: 'Broker',
+  joinwaitlist_role_shipyard: 'Cantiere',
+
   // Footer
   follow_us: 'Seguici su',
-  privacy: 'Privacy e Termini e Condizioni',
-  copyright: '@Copyright Batoo 2024',
+  privacy: 'Privacy · Termini e Condizioni',
+  copyright: '@Copyright Batoo 2025',
+
+  // Pillar section
+  pillar1_title: 'Salone Nautico Sempre Aggiornato',
+  pillar1_desc: 'Accedi a un <b>catalogo digitale di barche</b> sempre aggiornato, tutto l’anno, ovunque tu sia.',
+  pillar2_title: 'Markletplace Completamente Gratuito',
+  pillar2_desc: 'Batoo è <b>gratis per tutti</b>: utenti, appassionati e broker possono esplorare, pubblicare e contattare senza costi.',
+  pillar3_title: 'Esperienza Avanzata con Intelligenza Artificiale',
+  pillar3_desc: 'Trova la barca perfetta grazie a <b>filtri intelligenti</b> e <b>suggerimenti personalizzati</b> basati sulle tue preferenze.',
+  pillar4_title: 'Comparatore Intelligente',
+  pillar4_desc: '<b>Confronta fino a 4 barche</b> fianco a fianco e scopri subito le differenze tra le caratteristiche.',
+
+  // SlideBoats
+  
+  slide_boats: [
+    {
+      shipyard_model: 'Cantiere | Modello',
+      price: '500.000 $',
+      tax: 'Tasse in base alla tua posizione',
+      country: 'Italia',
+    },
+    {
+      shipyard_model: 'Cantiere | Modello',
+      price: '1.000.000 $',
+      tax: 'Tasse in base alla tua posizione',
+      country: 'Francia',
+    },
+    {
+      shipyard_model: 'Cantiere | Modello',
+      price: '2.000.000 $',
+      tax: 'Tasse escluse',
+      country: 'Spagna',
+    },
+  ],
 };
 
-export default it; 
+export default it;
