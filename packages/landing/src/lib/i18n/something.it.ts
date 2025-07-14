@@ -78,6 +78,8 @@ const it = {
   pillar3_desc: 'Trova la barca perfetta grazie a filtri intelligenti e suggerimenti personalizzati basati sulle tue preferenze.',
   pillar4_title: 'Comparatore Intelligente',
   pillar4_desc: 'Confronta fino a 4 barche fianco a fianco e scopri subito le differenze tra le caratteristiche.',
+  pillar_section_title: 'Perché scegliere Batoo',
+  pillar_section_subtitle: 'Scopri i vantaggi che rendono Batoo la piattaforma nautica più innovativa e completa',
 
   // SlideBoats
   

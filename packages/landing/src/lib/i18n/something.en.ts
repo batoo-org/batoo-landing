@@ -78,6 +78,8 @@ const en = {
   pillar3_desc: 'Find the perfect boat with smart filters and personalized suggestions based on your preferences.',
   pillar4_title: 'Intelligent Comparator',
   pillar4_desc: 'Compare up to 4 boats side by side and instantly spot the differences.',
+  pillar_section_title: 'Why choose Batoo',
+  pillar_section_subtitle: 'Discover the advantages that make Batoo the most innovative and complete boating platform',
 
   // SlideBoats
   

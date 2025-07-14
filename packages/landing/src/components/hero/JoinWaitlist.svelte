@@ -29,7 +29,7 @@
 			</clipPath>
 		</defs>
 	</svg>
-	<span class="text-xl font-medium">{translations[lang].joinwaitlist_title}</span>
+	<span class="ml-2 text-xl font-medium">{translations[lang].joinwaitlist_title}</span>
 	<div class="mt-4 flex w-full flex-col gap-4">
 		<div class="relative flex w-full flex-col gap-2">
 			<label class="text-sm font-medium" for="role">{translations[lang].joinwaitlist_role_label}</label>

@@ -263,10 +263,10 @@
 	<div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-12">
 		<div class="mb-16 text-center">
 			<h2 class="mb-6 text-4xl font-extrabold leading-tight text-primary-950 md:text-6xl">
-				Perché scegliere Batoo
+				{translations[lang].pillar_section_title}
 			</h2>
 			<p class="mx-auto max-w-3xl text-lg text-primary-950 md:text-xl">
-				Scopri i vantaggi che rendono Batoo la piattaforma nautica più innovativa e completa
+				{translations[lang].pillar_section_subtitle}
 			</p>
 		</div>
 
