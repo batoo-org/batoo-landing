@@ -104,6 +104,32 @@ const it = {
 
   team_title: 'Il Team Batoo',
   team_subtitle: 'Le persone che stanno rivoluzionando la nautica digitale in Italia',
+  team_members: [
+    {
+      name: 'Giorgio',
+      desc: 'Fondatore e visionario del progetto Batoo, appassionato di nautica e innovazione. Ha guidato team multidisciplinari in startup di successo e crede fortemente nel potere della tecnologia per rivoluzionare il settore nautico. Ama il mare e le sfide impossibili.'
+    },
+    {
+      name: 'Giulio',
+      desc: 'Esperto di sviluppo software e architetture cloud, cuore tech del team. Ha lavorato su piattaforme scalabili internazionali e si occupa di garantire che Batoo sia sempre affidabile, veloce e sicuro. Nel tempo libero si dedica all’open source.'
+    },
+    {
+      name: 'Fabio',
+      desc: 'Marketing strategist, sempre alla ricerca di nuove opportunità di crescita. Ha una lunga esperienza in digital marketing e brand positioning, con un focus particolare sulle startup innovative. Ama le barche e le nuove tecnologie.'
+    },
+    {
+      name: 'Alessandro',
+      desc: 'Product designer, cura ogni dettaglio dell’esperienza utente. Ha progettato interfacce per app e piattaforme digitali di successo, con un occhio attento all’accessibilità e alla semplicità. Appassionato di design minimalista e vela.'
+    },
+    {
+      name: 'Camilla',
+      desc: 'Customer success, punto di riferimento per la community Batoo. Si occupa di ascoltare i feedback degli utenti e trasformarli in valore per il prodotto. Ha esperienza in community management e customer care. Ama il networking e il mare.'
+    },
+    {
+      name: 'Federico',
+      desc: 'Business developer, connette Batoo con partner e investitori. Ha lavorato in ambito startup e venture capital, sviluppando strategie di crescita e partnership di valore. Crede nella collaborazione e nell’innovazione continua.'
+    }
+  ],
 };
 
 export default it;
