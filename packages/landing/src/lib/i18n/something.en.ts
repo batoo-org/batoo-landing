@@ -106,29 +106,30 @@ const en = {
   team_members: [
     {
       name: 'Giorgio',
-      desc: 'Founder and visionary of the Batoo project, passionate about boating and innovation. He has led multidisciplinary teams in successful startups and strongly believes in the power of technology to revolutionize the boating sector. Loves the sea and impossible challenges.'
-    },
-    {
-      name: 'Giulio',
-      desc: 'Software development and cloud architecture expert, the tech heart of the team. He has worked on scalable international platforms and ensures Batoo is always reliable, fast, and secure. In his free time, he contributes to open source.'
+      desc: 'Founder of Batoo. Passionate about boating and innovation, he believes in the power of technology to revolutionize the nautical sector.'
     },
     {
       name: 'Fabio',
-      desc: 'Marketing strategist, always looking for new growth opportunities. He has extensive experience in digital marketing and brand positioning, with a special focus on innovative startups. Loves boats and new technologies.'
-    },
-    {
-      name: 'Alessandro',
-      desc: 'Product designer, takes care of every detail of the user experience. He has designed interfaces for successful apps and digital platforms, with a keen eye for accessibility and simplicity. Passionate about minimalist design and sailing.'
-    },
-    {
-      name: 'Camilla',
-      desc: 'Customer success, a point of reference for the Batoo community. She listens to user feedback and turns it into product value. Experienced in community management and customer care. Loves networking and the sea.'
+      desc: 'Full-stack developer working across both frontend and backend, with projects in the crypto space as well.'
     },
     {
       name: 'Federico',
-      desc: 'Business developer, connects Batoo with partners and investors. He has worked in startups and venture capital, developing growth strategies and valuable partnerships. Believes in collaboration and continuous innovation.'
+      desc: 'Backend developer focused on performance, APIs, and infrastructure security.'
+    },
+    {
+      name: 'Giulio',
+      desc: 'A sailing enthusiast who develops and maintains relationships with nautical stakeholders.'
+    },
+    {
+      name: 'Camilla',
+      desc: 'Marketing manager; plans multichannel campaigns, analyzes market data, and supports community growth.'
+    },
+    {
+      name: 'Alessandro',
+      desc: 'Economics lead; analyzes business metrics and models revenue scenarios.'
     }
-  ],
+  ]
+  ,
 };
 
 export default en;
