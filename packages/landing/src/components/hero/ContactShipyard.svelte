@@ -9,7 +9,7 @@
 >
 	<div class="flex items-center gap-4">
 		<div class="flex h-[2.75rem] w-[2.75rem] overflow-hidden rounded-full bg-[#BBDEFF] p-[2px]">
-			<img class="m-auto w-full object-contain" src="assets/shipyard.png" alt="" />
+			<img class="m-auto w-full object-contain" src="assets/shipyard.webp" alt="" />
 		</div>
 		<h6>Shipyard</h6>
 	</div>

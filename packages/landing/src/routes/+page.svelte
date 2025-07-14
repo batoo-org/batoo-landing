@@ -58,7 +58,7 @@
 </script>
 
 <section class="relative flex min-h-screen flex-col overflow-hidden">
-	<img class="absolute left-0 top-0 h-full w-full object-cover" src="assets/boat-bg.png" alt="" />
+	<img class="absolute left-0 top-0 h-full w-full object-cover" src="assets/boat-bg.webp" alt="" />
 	<div class="relative flex flex-1 bg-[rgba(18,26,84,0.77)] px-4 py-12 backdrop-blur-xl lg:px-12">
 		<BatooLogo
 			class="absolute -right-12 -top-12 hidden rotate-[14deg] opacity-20 lg:-right-24 lg:top-20 lg:block lg:w-[700px]"
@@ -113,7 +113,7 @@
 		<!-- COLONNA IMMAGINE -->
 		<div class="flex items-center justify-center overflow-visible">
 			<img
-				src="assets/batoo_home.png"
+				src="assets/batoo_home.webp"
 				alt="Batoo Home"
 				class="w-full rounded-xl object-contain shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] transition-transform duration-500 lg:scale-110 xl:scale-125"
 			/>
@@ -138,7 +138,7 @@
 			{translations[lang].section2_text2}
 		</span>
 	</div>
-	<img class="absolute bottom-0 right-0 lg:-right-40 lg:h-full" src="assets/boat.svg" alt="" />
+	<img class="absolute bottom-0 right-0 lg:-right-40 lg:h-full" src="assets/boat.webp" alt="" />
 </section>
 
 <section class="flex flex-col gap-10 overflow-hidden bg-primary-950 pt-12 md:flex-row md:pr-4 lg:p-12">
@@ -155,14 +155,14 @@
 		></BatooLogo>
 	</div>
 	<div class="relative flex-1 overflow-hidden md:rounded-2xl">
-		<img class="h-full w-full object-cover" src="assets/contact.png" alt="" />
+		<img class="h-full w-full object-cover" src="assets/contact.webp" alt="" />
 	</div>
 </section>
 
 <section class="flex flex-col-reverse gap-10 overflow-hidden bg-primary-950 px-4 py-12 lg:flex-row lg:px-12">
 	<div class="grid flex-1 grid-cols-2 gap-4">
-		<img class="aspect-square w-full rounded-xl object-cover" src="assets/boat1.jpg" alt="" />
-		<img class="aspect-square w-full rounded-xl object-cover" src="assets/boat2.jpg" alt="" />
+		<img class="aspect-square w-full rounded-xl object-cover" src="assets/boat1.webp" alt="" />
+		<img class="aspect-square w-full rounded-xl object-cover" src="assets/boat2.webp" alt="" />
 		<div
 			class="relative col-span-2 overflow-hidden rounded-xl p-4 pt-8 backdrop-blur-xl md:px-8"
 			style="background: linear-gradient(180deg, rgba(129, 132, 135, 0.2) 0%, rgba(227, 231, 237, 0.2) 100%);"
@@ -205,7 +205,7 @@
 <section
 	id="broker-parallax"
 	class="relative w-full overflow-hidden bg-gradient-to-b from-white to-primary-50"
-	style="background-image: url('/assets/broker.jpg'); background-size: cover; background-position: center {parallaxY}px; background-repeat: no-repeat;"
+	style="background-image: url('/assets/broker.webp'); background-size: cover; background-position: center {parallaxY}px; background-repeat: no-repeat;"
 >
 	<div class="bg-primary-900/70 absolute inset-0"></div>
 	<!-- Content -->
@@ -416,7 +416,7 @@
 					class="flex w-full max-w-md flex-col items-center rounded-2xl border border-primary-100 bg-white p-10 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
 				>
 					<div class="mb-3 flex items-center justify-center gap-2 text-center">
-						<img src={`assets/boat_team${i + 1}.png`} alt="Icona team" class="h-12 w-12" />
+						<img src={`assets/boat_team${i + 1}.webp`} alt="Icona team" class="h-12 w-12" />
 						<div class="text-2xl font-extrabold text-primary-950">{member.name}</div>
 					</div>
 					<div class="text-lg leading-relaxed text-black">{member.desc}</div>

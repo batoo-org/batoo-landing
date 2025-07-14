@@ -44,7 +44,7 @@
 
 {#snippet slide(index: number, slideData: { shipyard_model: string; price: string; tax: string; country: string })}
 	<div class="swiper-slide relative h-full w-full">
-		<img draggable={false} class="h-full w-full object-cover" src="assets/boat-slide-{index + 1}.jpg" alt="" />
+		<img draggable={false} class="h-full w-full object-cover" src="assets/boat-slide-{index + 1}.webp" alt="" />
 		<div
 			style="background: linear-gradient(180deg, transparent 50%, #4D59B3 100%)"
 			class="absolute bottom-0 left-0 flex h-full w-full flex-col justify-end px-4 py-5 text-lg text-white"
