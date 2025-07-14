@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import { fade, slide } from 'svelte/transition';
+	import { fade, slide, scale } from 'svelte/transition';
 	import { onMount } from 'svelte';
 
 	import en from '$lib/i18n/something.en';
@@ -12,6 +12,7 @@
 	import BatooLogo from '$components/svg/BatooLogo.svelte';
 
 	let email = '';
+	let role = 'user';
 	let lang: 'en' | 'it' = 'en';
 	const translations = { en, it };
 
@@ -27,25 +28,32 @@
 	});
 
 	let parallaxY = 0;
-	let isDesktop = typeof window !== 'undefined' ? window.innerWidth >= 1024 : false;
 
 	function handleScroll() {
-		isDesktop = window.innerWidth >= 1024;
-		if (isDesktop) {
-			const section = document.getElementById('broker-parallax');
-			if (section) {
-				const rect = section.getBoundingClientRect();
-				// Più la sezione è in alto, più lo sfondo si muove
-				parallaxY = Math.max(0, -rect.top * 0.3);
-			}
-		} else {
-			parallaxY = 0;
+		const section = document.getElementById('broker-parallax');
+		if (section) {
+			const rect = section.getBoundingClientRect();
+			// Più la sezione è in alto, più lo sfondo si muove
+			parallaxY = Math.max(0, -rect.top * 0.3);
 		}
 	}
 
 	if (typeof window !== 'undefined') {
 		window.addEventListener('scroll', handleScroll);
 		window.addEventListener('resize', handleScroll);
+	}
+
+	let teamParallaxY = 0;
+	function handleTeamParallax() {
+		const section = document.getElementById('team-section');
+		if (section) {
+			const rect = section.getBoundingClientRect();
+			teamParallaxY = Math.max(0, -rect.top * 0.2);
+		}
+	}
+	if (typeof window !== 'undefined') {
+		window.addEventListener('scroll', handleTeamParallax);
+		window.addEventListener('resize', handleTeamParallax);
 	}
 </script>
 
@@ -197,9 +205,7 @@
 <section
 	id="broker-parallax"
 	class="relative w-full overflow-hidden bg-gradient-to-b from-white to-primary-50"
-	style="background-image: url('/assets/broker.jpg'); background-size: cover; background-position: center {isDesktop
-		? parallaxY + 'px'
-		: 'top'}; background-repeat: no-repeat;"
+	style="background-image: url('/assets/broker.jpg'); background-size: cover; background-position: center {parallaxY}px; background-repeat: no-repeat;"
 >
 	<div class="bg-primary-900/70 absolute inset-0"></div>
 	<!-- Content -->
@@ -264,7 +270,7 @@
 			</p>
 		</div>
 
-		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
 			<!-- Pillar 1 -->
 			<div
 				class="group rounded-2xl border border-primary-100 bg-white p-8 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
@@ -388,6 +394,38 @@
 	</div>
 </section>
 
+<!-- Sezione Team Batoo -->
+<section id="team-section" class="relative w-full overflow-hidden py-24" style="background-color: #2563eb;">
+	<div
+		class="pointer-events-none absolute inset-0"
+		style="background: url('assets/batoo.svg'); background-repeat: repeat; background-size: 180px; background-position: center {teamParallaxY}px; opacity: 0.08;"
+	></div>
+	<div class="bg-accent-700/80 pointer-events-none absolute inset-0"></div>
+	<div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-12">
+		<div class="mb-16 text-center">
+			<h2 class="mb-6 text-4xl font-extrabold leading-tight text-white md:text-6xl">
+				{translations[lang].team_title}
+			</h2>
+			<p class="mx-auto max-w-3xl text-lg text-white md:text-xl">
+				{translations[lang].team_subtitle}
+			</p>
+		</div>
+		<div class="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-3">
+			{#each [{ name: 'Giorgio', desc: 'Fondatore e visionario del progetto Batoo, appassionato di nautica e innovazione. Ha guidato team multidisciplinari in startup di successo e crede fortemente nel potere della tecnologia per rivoluzionare il settore nautico. Ama il mare e le sfide impossibili.' }, { name: 'Giulio', desc: 'Esperto di sviluppo software e architetture cloud, cuore tech del team. Ha lavorato su piattaforme scalabili internazionali e si occupa di garantire che Batoo sia sempre affidabile, veloce e sicuro. Nel tempo libero si dedica all’open source.' }, { name: 'Fabio', desc: 'Marketing strategist, sempre alla ricerca di nuove opportunità di crescita. Ha una lunga esperienza in digital marketing e brand positioning, con un focus particolare sulle startup innovative. Ama le barche e le nuove tecnologie.' }, { name: 'Alessandro', desc: 'Product designer, cura ogni dettaglio dell’esperienza utente. Ha progettato interfacce per app e piattaforme digitali di successo, con un occhio attento all’accessibilità e alla semplicità. Appassionato di design minimalista e vela.' }, { name: 'Camilla', desc: 'Customer success, punto di riferimento per la community Batoo. Si occupa di ascoltare i feedback degli utenti e trasformarli in valore per il prodotto. Ha esperienza in community management e customer care. Ama il networking e il mare.' }, { name: 'Federico', desc: 'Business developer, connette Batoo con partner e investitori. Ha lavorato in ambito startup e venture capital, sviluppando strategie di crescita e partnership di valore. Crede nella collaborazione e nell’innovazione continua.' }] as member, i}
+				<div
+					class="flex w-full max-w-md flex-col items-center rounded-2xl border border-primary-100 bg-white p-10 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+				>
+					<div class="mb-3 flex items-center justify-center gap-2 text-center">
+						<img src={`assets/boat_team${i + 1}.png`} alt="Icona team" class="h-12 w-12" />
+						<div class="text-2xl font-extrabold text-primary-950">{member.name}</div>
+					</div>
+					<div class="text-lg leading-relaxed text-black">{member.desc}</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
+
 <!-- Sezione broker -->
 <section class="relative flex flex-col items-center overflow-hidden bg-black px-4 py-32 text-center lg:py-48">
 	<BatooLogo
@@ -398,17 +436,47 @@
 	<div class="relative flex flex-col gap-6 lg:w-[60%]">
 		<h6 class="text-accent-700 lg:text-[2.75rem]">{translations[lang].more_coming}</h6>
 		<h4 class="text-white lg:text-[5rem] lg:leading-none">{translations[lang].stay_on_board}</h4>
-		<div class="mt-8 flex w-full max-w-[500px] flex-col gap-8 self-center rounded-2xl bg-white p-4 lg:flex-row">
-			<input
-				type="email"
-				class="basis-full rounded-full border border-black border-opacity-50 px-4 py-3"
-				placeholder={translations[lang].email_placeholder}
-				bind:value={email}
-			/>
-			<button
-				class="basis-1/2 rounded-full bg-black px-4 py-3 text-center text-white disabled:opacity-50"
-				disabled={!email}>{translations[lang].waitlist_button}</button
-			>
+		<div class="mt-8 flex w-full max-w-[500px] flex-col gap-4 self-center rounded-2xl bg-white p-4">
+			<div class="relative flex w-full flex-col gap-2">
+				<label class="text-sm font-medium text-black" for="waitlist-role"
+					>{translations[lang].joinwaitlist_role_label}</label
+				>
+				<div class="relative">
+					<select
+						id="waitlist-role"
+						class="w-full appearance-none rounded-full border border-black border-opacity-50 bg-white px-4 py-3 pr-10 text-black shadow-sm transition-all duration-200 focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+						bind:value={role}
+					>
+						<option value="user">{translations[lang].joinwaitlist_role_user}</option>
+						<option value="private">{translations[lang].joinwaitlist_role_private}</option>
+						<option value="broker">{translations[lang].joinwaitlist_role_broker}</option>
+						<option value="shipyard">{translations[lang].joinwaitlist_role_shipyard}</option>
+					</select>
+					<svg
+						class="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-black"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+					</svg>
+				</div>
+			</div>
+			<div class="flex w-full flex-col gap-4">
+				<div class="w-full">
+					<input
+						type="email"
+						class="w-full rounded-full border border-black border-opacity-50 bg-white px-4 py-3 text-black shadow-sm transition-all duration-200 placeholder:text-neutral-500 focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+						placeholder={translations[lang].email_placeholder}
+						bind:value={email}
+					/>
+				</div>
+				<button
+					class="w-full rounded-full bg-black px-4 py-3 text-center text-white disabled:opacity-50"
+					disabled={!email || !role}>{translations[lang].waitlist_button}</button
+				>
+			</div>
 		</div>
 	</div>
 </section>

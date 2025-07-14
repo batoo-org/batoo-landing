@@ -55,7 +55,7 @@ const en = {
   email_placeholder: 'Enter your email',
 
   // JoinWaitlist
-  joinwaitlist_title: 'Your email',
+  joinwaitlist_title: 'Hop on board',
   joinwaitlist_placeholder: 'Enter your email',
   joinwaitlist_button: 'Join the waiting list',
   joinwaitlist_role_label: 'I am a:',
@@ -104,6 +104,8 @@ const en = {
       country: 'Spain',
     },
   ],
+  team_title: 'The Batoo Team',
+  team_subtitle: 'The people revolutionizing digital boating in Italy',
 };
 
 export default en;

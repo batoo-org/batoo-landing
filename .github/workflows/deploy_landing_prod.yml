@@ -1,6 +1,5 @@
 name: Batoo FE Prod
 
-
 on:
     push:
         branches: [prod]

@@ -55,7 +55,7 @@ const it = {
   email_placeholder: 'Inserisci la tua email',
 
   // JoinWaitlist
-  joinwaitlist_title: 'La tua email',
+  joinwaitlist_title: 'Sali a bordo',
   joinwaitlist_placeholder: 'Inserisci la tua email',
   joinwaitlist_button: 'Unisciti alla waiting list',
   joinwaitlist_role_label: 'Sono un:',
@@ -101,6 +101,9 @@ const it = {
       country: 'Spagna',
     },
   ],
+
+  team_title: 'Il Team Batoo',
+  team_subtitle: 'Le persone che stanno rivoluzionando la nautica digitale in Italia',
 };
 
 export default it;

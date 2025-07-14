@@ -30,8 +30,8 @@
 		</defs>
 	</svg>
 	<span class="text-xl font-medium">{translations[lang].joinwaitlist_title}</span>
-	<div class="mt-4 flex w-full flex-col justify-between gap-4 md:flex-row">
-		<div class="relative flex w-full flex-col gap-2 md:w-1/2">
+	<div class="mt-4 flex w-full flex-col gap-4">
+		<div class="relative flex w-full flex-col gap-2">
 			<label class="text-sm font-medium" for="role">{translations[lang].joinwaitlist_role_label}</label>
 			<div class="relative">
 				<select
@@ -61,15 +61,10 @@
 				bind:value={email}
 			/>
 		</div>
-		<div class="flex items-center gap-[3px]">
-			<div class="flex h-9 w-9 rounded-full bg-black">
-				<img src="icons/arrow.svg" class="m-auto w-4" alt="" />
-			</div>
-			<button
-				class="grow rounded-full bg-black px-6 py-3 text-center text-white disabled:opacity-50 md:grow-0"
-				disabled={!email || !role}>{translations[lang].joinwaitlist_button}</button
-			>
-		</div>
+		<button
+			class="w-full rounded-full bg-black px-6 py-3 text-center text-white disabled:opacity-50"
+			disabled={!email || !role}>{translations[lang].joinwaitlist_button}</button
+		>
 	</div>
 </div>
 
