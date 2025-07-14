@@ -115,7 +115,7 @@ const it = {
     },
     {
       name: 'Fabio',
-      desc: 'Marketing strategist, sempre alla ricerca di nuove opportunità di crescita. Ha una lunga esperienza in digital marketing e brand positioning, con un focus particolare sulle startup innovative. Ama le barche e le nuove tecnologie.'
+      desc: 'Scammer, sempre alla ricerca di nuove opportunità di crescita. Ha una lunga esperienza in digital marketing e brand positioning, con un focus particolare sulle startup innovative. Ama le barche e le nuove tecnologie.'
     },
     {
       name: 'Alessandro',
