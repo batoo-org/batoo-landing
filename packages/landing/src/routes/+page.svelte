@@ -138,7 +138,7 @@
 			{translations[lang].section2_text2}
 		</span>
 	</div>
-	<img class="absolute bottom-0 right-0 lg:-right-40 lg:h-full" src="assets/boat.webp" alt="" />
+	<img class="absolute bottom-0 right-0 lg:-right-40 lg:h-full" src="assets/boat.svg" alt="" />
 </section>
 
 <section class="flex flex-col gap-10 overflow-hidden bg-primary-950 pt-12 md:flex-row md:pr-4 lg:p-12">
