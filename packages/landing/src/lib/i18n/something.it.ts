@@ -85,13 +85,13 @@ const it = {
     {
       shipyard_model: 'Cantiere | Modello',
       price: '500.000 $',
-      tax: 'Tasse in base alla tua posizione',
+      tax: 'Tasse incluse',
       country: 'Italia',
     },
     {
       shipyard_model: 'Cantiere | Modello',
       price: '1.000.000 $',
-      tax: 'Tasse in base alla tua posizione',
+      tax: 'Tasse incluse',
       country: 'Francia',
     },
     {
@@ -107,7 +107,7 @@ const it = {
   team_members: [
     {
       name: 'Giorgio',
-      desc: 'Fondatore e visionario del progetto Batoo, appassionato di nautica e innovazione. Ha guidato team multidisciplinari in startup di successo e crede fortemente nel potere della tecnologia per rivoluzionare il settore nautico. Ama il mare e le sfide impossibili.'
+      desc: 'Fondatore di Batoo, appassionato di nautica e innovazione. Ha guidato team multidisciplinari in startup di successo e crede fortemente nel potere della tecnologia per rivoluzionare il settore nautico. Ama il mare e le sfide impossibili.'
     },
     {
       name: 'Giulio',

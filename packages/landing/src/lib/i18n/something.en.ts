@@ -80,21 +80,18 @@ const en = {
   pillar4_desc: 'Compare up to 4 boats side by side and instantly spot the differences.',
 
   // SlideBoats
-  slide_shipyard_model: 'Shipyard | Model',
-  slide_price: '$200,000',
-  slide_tax: 'Taxes based on your location',
-  slide_country: 'Italy',
+  
   slide_boats: [
     {
       shipyard_model: 'Shipyard | Model',
       price: '$500,000',
-      tax: 'Taxes based on your location',
+      tax: 'Taxes included',
       country: 'Italy',
     },
     {
       shipyard_model: 'Shipyard | Model',
       price: '$1,000,000',
-      tax: 'Taxes based on your location',
+      tax: 'Taxes included',
       country: 'France',
     },
     {
