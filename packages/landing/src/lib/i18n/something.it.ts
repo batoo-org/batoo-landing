@@ -71,13 +71,17 @@ const it = {
 
   // Pillar section
   pillar1_title: 'Salone Nautico Sempre Aggiornato',
-  pillar1_desc: 'Accedi a un catalogo digitale di barche sempre aggiornato, tutto l\'anno, ovunque tu sia.',
-  pillar2_title: 'Markletplace Completamente Gratuito',
-  pillar2_desc: 'Batoo è gratis per tutti: utenti, appassionati e broker possono esplorare, pubblicare e contattare senza costi.',
-  pillar3_title: 'Esperienza Avanzata con Intelligenza Artificiale',
-  pillar3_desc: 'Trova la barca perfetta grazie a filtri intelligenti e suggerimenti personalizzati basati sulle tue preferenze.',
-  pillar4_title: 'Comparatore Intelligente',
-  pillar4_desc: 'Confronta fino a 4 barche fianco a fianco e scopri subito le differenze tra le caratteristiche.',
+  pillar1_desc: 'Un <b>salone nautico digitale</b> sempre online, dove scoprire ogni giorno <b>nuovi modelli</b>, novità dai <b>cantieri</b> e barche in vendita da <b>privati e professionisti</b>.',
+
+pillar2_title: 'Marketplace Completamente Gratuito',
+pillar2_desc: 'Pubblica i tuoi <b>annunci</b> senza alcun <b>costo</b> e metti in mostra la tua <b>barca</b> a migliaia di potenziali <b>acquirenti</b>.',
+
+pillar3_title: 'Esperienza Avanzata con Intelligenza Artificiale',
+pillar3_desc: 'Un <b>assistente</b> basato su <b>intelligenza artificiale</b> ti guida in ogni fase: dalla <b>ricerca</b> fino all’<b>acquisto</b>.',
+
+pillar4_title: 'Comparatore Intelligente',
+pillar4_desc: '<b>Confronta</b> fino a <b>4 barche</b> fianco a fianco e scopri subito le <b>differenze</b> tra le <b>caratteristiche</b>.',
+
   pillar_section_title: 'Perché scegliere Batoo',
   pillar_section_subtitle: 'Scopri i vantaggi che rendono Batoo la piattaforma nautica più innovativa e completa',
 
@@ -109,29 +113,30 @@ const it = {
   team_members: [
     {
       name: 'Giorgio',
-      desc: 'Fondatore di Batoo. Appassionato di nautica e innovazione, crede nel potere della tecnologia per rivoluzionare il settore nautico.'
+      desc: 'Fondatore di Batoo. Appassionato di nautica e innovazione, guida la visione del progetto con l’obiettivo di rendere il mondo della nautica più accessibile, efficiente e digitale grazie alla tecnologia.'
     },
     {
       name: 'Fabio',
-      desc: 'Scammer & Sviluppatore full-stack che cura sia frontend sia backend, con progetti anche nel settore blockchain.'
+      desc: 'Sviluppatore full-stack con esperienza nel settore blockchain e web3. Cura l’intero ciclo di sviluppo, dall’interfaccia utente alle API, garantendo stabilità, velocità e innovazione alla piattaforma.'
     },
     {
       name: 'Federico',
-      desc: 'Backend developer focalizzato su prestazioni, API e sicurezza dell’infrastruttura.'
+      desc: 'Sviluppatore full-stack esperto in backend scalabili e sicuri. Ottimizza le performance della piattaforma, assicurando un’esperienza fluida e affidabile per ogni tipo di utente.'
     },
     {
       name: 'Giulio',
-      desc: 'Appassionato di vela; sviluppa e mantiene le relazioni con gli stakeholder nautici.'
+      desc: 'Appassionato di vela e profondo conoscitore del settore. Si occupa di costruire relazioni con cantieri, broker e stakeholder per garantire un’offerta nautica sempre aggiornata e di qualità.'
     },
     {
       name: 'Camilla',
-      desc: 'Responsabile marketing; pianifica campagne multicanale, analizza dati di mercato e supporta la crescita della community..'
+      desc: 'Responsabile marketing con un focus su community e crescita organica. Coordina le campagne multicanale, analizza i dati e lavora per posizionare Batoo come punto di riferimento nel settore.'
     },
     {
       name: 'Alessandro',
-      desc: 'Responsabile degli economics; analizza metriche di business e modella scenari di ricavo.'
+      desc: 'Esperto di business analytics e modellazione finanziaria. Supervisiona gli economics del progetto, sviluppando scenari di ricavo sostenibili e strategie per la crescita a lungo termine.'
     }
-  ],
+  ]
+  ,
 };
 
 export default it;

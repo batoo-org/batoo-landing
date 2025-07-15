@@ -70,14 +70,17 @@ const en = {
   copyright: '@Copyright Batoo 2025',
 
   // Pillar section
-  pillar1_title: 'Boat Show, All Year Long',
-  pillar1_desc: 'Access a constantly updated digital catalog of boats, anytime, anywhere.',
-  pillar2_title: 'Completely Free Markletplace',
-  pillar2_desc: 'Batoo is free for everyone: users, enthusiasts, and brokers can explore, post, and connect at no cost.',
-  pillar3_title: 'AI-Powered Experience',
-  pillar3_desc: 'Find the perfect boat with smart filters and personalized suggestions based on your preferences.',
-  pillar4_title: 'Intelligent Comparator',
-  pillar4_desc: 'Compare up to 4 boats side by side and instantly spot the differences.',
+pillar1_title: 'Always-Up-to-Date Boat Show',
+pillar1_desc: 'A <b>digital boat show</b> that’s always online, where you can discover <b>new models</b> every day, updates from <b>shipyards</b>, and boats for sale from <b>private sellers</b> and <b>professionals</b>.',
+
+pillar2_title: 'Completely Free Marketplace',
+pillar2_desc: 'List your <b>ads</b> at no <b>cost</b> and showcase your <b>boat</b> to thousands of potential <b>buyers</b>.',
+
+pillar3_title: 'Advanced AI-Powered Experience',
+pillar3_desc: 'An <b>AI assistant</b> that supports you at every stage — from <b>searching</b> to <b>buying</b>.',
+
+pillar4_title: 'Smart Comparison Tool',
+pillar4_desc: '<b>Compare</b> up to <b>4 boats</b> side by side and instantly spot the <b>differences</b> in their <b>features</b>.',
   pillar_section_title: 'Why choose Batoo',
   pillar_section_subtitle: 'Discover the advantages that make Batoo the most innovative and complete boating platform',
 
@@ -108,27 +111,27 @@ const en = {
   team_members: [
     {
       name: 'Giorgio',
-      desc: 'Founder of Batoo. Passionate about boating and innovation, he believes in the power of technology to revolutionize the nautical sector.'
+      desc: 'Founder of Batoo. A passionate sailor and innovator, he leads the project’s vision to make the boating world more accessible, efficient, and digitally powered through smart technology.'
     },
     {
       name: 'Fabio',
-      desc: 'Full-stack developer working across both frontend and backend, with projects in the crypto space as well.'
+      desc: 'Full-stack developer with experience in blockchain and web3. He manages the entire development cycle—from user interface to backend APIs—ensuring speed, stability, and innovation across the platform.'
     },
     {
       name: 'Federico',
-      desc: 'Backend developer focused on performance, APIs, and infrastructure security.'
+      desc: 'Full-stack developer specialized in building scalable and secure backend systems. He enhances the platform’s performance, ensuring a seamless and reliable experience for every type of user.'
     },
     {
       name: 'Giulio',
-      desc: 'A sailing enthusiast who develops and maintains relationships with nautical stakeholders.'
+      desc: 'A sailing enthusiast and industry insider. He nurtures relationships with shipyards, brokers, and stakeholders to ensure Batoo offers a top-tier and up-to-date nautical catalog.'
     },
     {
       name: 'Camilla',
-      desc: 'Marketing manager; plans multichannel campaigns, analyzes market data, and supports community growth.'
+      desc: 'Marketing lead focused on community and organic growth. She orchestrates multichannel campaigns, analyzes market data, and drives Batoo’s positioning as a leader in the boating industry.'
     },
     {
       name: 'Alessandro',
-      desc: 'Economics lead; analyzes business metrics and models revenue scenarios.'
+      desc: 'Business analytics and financial modeling expert. He oversees the project’s economics, crafting sustainable revenue models and long-term growth strategies to support Batoo’s success.'
     }
   ]
   ,

@@ -146,7 +146,7 @@
 		<h4 class="relative z-10 mb-4 max-w-[75vw] leading-tight lg:mb-6 lg:text-[2.75rem]">
 			{translations[lang].contact_title}
 		</h4>
-		<span class="relative z-10 text-[1.125rem] leading-tight opacity-50 lg:text-[1.75rem]">
+		<span class="relative z-10 text-[1.125rem] leading-tight text-white/80 lg:text-[1.75rem]">
 			{translations[lang].contact_text}
 		</span>
 		<BatooLogo
@@ -195,7 +195,7 @@
 		<h4 class="relative z-10 mb-4 max-w-[75vw] leading-tight lg:mb-6 lg:text-[2.75rem]">
 			{translations[lang].compare_title}
 		</h4>
-		<span class="relative z-10 leading-tight opacity-50 lg:text-[1.5rem]">
+		<span class="relative z-10 text-[1.125rem] leading-tight text-white/80 lg:text-[1.75rem]">
 			{translations[lang].compare_text}
 		</span>
 	</div>
@@ -221,7 +221,7 @@
 				<br class="hidden lg:block" />
 				<span>{translations[lang].broker_subtitle}</span>
 			</h2>
-			<p class="text-base text-lg md:text-xl">
+			<p class="mt-8 text-base text-lg md:text-xl">
 				{translations[lang].broker_description}
 			</p>
 			<div class="mt-6 space-y-2">
@@ -291,7 +291,13 @@
 					{translations[lang].pillar1_title}
 				</h3>
 				<p class="leading-relaxed text-primary-950">
-					{translations[lang].pillar1_desc}
+					{#each translations[lang].pillar1_desc as part}
+						{#if part.type === 'bold'}
+							<strong>{part.value}</strong>
+						{:else}
+							{part.value}
+						{/if}
+					{/each}
 				</p>
 			</div>
 
@@ -315,7 +321,13 @@
 					{translations[lang].pillar2_title}
 				</h3>
 				<p class="leading-relaxed text-primary-950">
-					{translations[lang].pillar2_desc}
+					{#each translations[lang].pillar2_desc as part}
+						{#if part.type === 'bold'}
+							<strong>{part.value}</strong>
+						{:else}
+							{part.value}
+						{/if}
+					{/each}
 				</p>
 			</div>
 
@@ -339,7 +351,13 @@
 					{translations[lang].pillar3_title}
 				</h3>
 				<p class="leading-relaxed text-primary-950">
-					{translations[lang].pillar3_desc}
+					{#each translations[lang].pillar3_desc as part}
+						{#if part.type === 'bold'}
+							<strong>{part.value}</strong>
+						{:else}
+							{part.value}
+						{/if}
+					{/each}
 				</p>
 			</div>
 
@@ -387,7 +405,13 @@
 					{translations[lang].pillar4_title}
 				</h3>
 				<p class="leading-relaxed text-primary-950">
-					{translations[lang].pillar4_desc}
+					{#each translations[lang].pillar4_desc as part}
+						{#if part.type === 'bold'}
+							<strong>{part.value}</strong>
+						{:else}
+							{part.value}
+						{/if}
+					{/each}
 				</p>
 			</div>
 		</div>
@@ -403,7 +427,7 @@
 	<div class="bg-accent-700/80 pointer-events-none absolute inset-0"></div>
 	<div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-12">
 		<div class="mb-16 text-center">
-			<h2 class="mb-6 text-4xl font-extrabold leading-tight text-white md:text-6xl">
+			<h2 class="mb-12 text-4xl font-extrabold leading-tight text-white md:text-6xl">
 				{translations[lang].team_title}
 			</h2>
 			<p class="mx-auto max-w-3xl text-lg text-white md:text-xl">
@@ -412,14 +436,16 @@
 		</div>
 		<div class="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-3">
 			{#each translations[lang].team_members as member, i}
-				<div
-					class="flex w-full max-w-md flex-col items-center rounded-2xl border border-primary-100 bg-white p-10 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-				>
-					<div class="mb-3 flex items-center justify-center gap-2 text-center">
-						<img src={`assets/boat_team${i + 1}.webp`} alt="Icona team" class="h-12 w-12" />
-						<div class="text-2xl font-extrabold text-primary-950">{member.name}</div>
+				<div class="flex h-full w-full justify-center">
+					<div
+						class="flex h-full min-h-[340px] w-full max-w-md flex-col items-center rounded-2xl border border-primary-100 bg-white p-10 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+					>
+						<div class="mb-3 flex items-center justify-center gap-2 text-center">
+							<img src={`assets/boat_team${i + 1}.webp`} alt="Icona team" class="h-12 w-12" />
+							<div class="text-2xl font-extrabold text-primary-950">{member.name}</div>
+						</div>
+						<div class="text-lg leading-relaxed text-black">{member.desc}</div>
 					</div>
-					<div class="text-lg leading-relaxed text-black">{member.desc}</div>
 				</div>
 			{/each}
 		</div>
