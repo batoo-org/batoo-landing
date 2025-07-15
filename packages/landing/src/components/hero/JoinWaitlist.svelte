@@ -73,10 +73,6 @@
 		<p class="mt-2 text-sm text-red-500">{errorMessage}</p>
 	{/if}
 
-	{#if successMessage}
-		<p class="mt-2 text-sm text-green-500">{successMessage}</p>
-	{/if}
-
 	<div class="mt-4 flex w-full flex-col gap-4">
 		<div class="relative flex w-full flex-col gap-2">
 			<label class="text-sm font-medium" for="role">{translations[lang].joinwaitlist_role_label}</label>
@@ -132,6 +128,9 @@
 				{translations[lang].joinwaitlist_button}
 			{/if}
 		</button>
+		{#if successMessage}
+			<p class="mt-2 text-center text-sm text-green-500">{successMessage}</p>
+		{/if}
 	</div>
 </div>
 
