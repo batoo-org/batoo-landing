@@ -1,34 +1,34 @@
 const it = {
   // Hero section
   hero_title: 'Il Salone Nautico che non finisce mai',
-  hero_subtitle: 'Scopri, confronta e contatta cantieri, broker e privati: la barca dei tuoi sogni ti aspetta qui.',
-  waitlist_button: 'Unisciti alla waiting list',
+  hero_subtitle: 'Scopri, confronta e acquista in un unico luogo digitale: la barca dei tuoi sogni è a un click di distanza.',
+  waitlist_button: 'Prenota il tuo posto ora',
 
   // Section 1 – Gateway
-  section1_title: 'La tua porta d’ingresso al mondo della nautica',
-  section1_text: 'Esplora e confronta migliaia di modelli -nuovi o usati- su una piattaforma intuitiva. I filtri intelligenti ti guidano verso la barca perfetta e ti permettono di comprare o vendere l’usato in pochi clic.',
-  section1_subtitle: 'Contatta tutti in pochi clic',
-  section1_subtitle_text: 'Parla con cantieri, broker e privati in un attimo, senza complicazioni.',
+  section1_title: 'La tua corsia preferenziale verso il mare',
+  section1_text: 'Sfoglia migliaia di barche nuove e usate su un’unica piattaforma intuitiva. I filtri intelligenti trovano per te la rotta più breve verso l’imbarcazione perfetta.',
+  section1_subtitle: 'Tutti i contatti, zero complicazioni',
+  section1_subtitle_text: 'Raggiungi cantieri, broker e privati in pochi secondi e mantieni le trattative semplici.',
 
   // Section 2 – Platform description
-  section2_text1: 'Batoo mette in contatto utenti e cantieri su una piattaforma facile da usare, dove puoi esplorare e confrontare ogni barca disponibile.',
-  section2_text2: 'I filtri basati su AI affinano la ricerca nei minimi dettagli per farti trovare l’imbarcazione ideale.',
+  section2_text1: 'Batoo unisce in modo semplice armatori, cantieri e broker, mettendo ogni barca a portata di click.',
+  section2_text2: 'Filtri potenziati dall’AI ti guidano al modello ideale fin nei minimi dettagli.',
 
   // Contact section
-  contact_title: 'Contatta cantieri e broker in un clic.',
-  contact_text: 'Ottieni subito tutte le informazioni che ti servono: bastano pochi clic per iniziare la conversazione.',
+  contact_title: 'Domande? Chiedi in un click',
+  contact_text: 'Ricevi subito schede tecniche, preventivi e prove in mare: bastano pochi secondi per avviare la conversazione.',
 
   // Compare section
-  compare_title: 'Confrontare le barche non è mai stato così facile',
-  compare_text: 'Metti a confronto fino a 4 imbarcazioni e scegli quella perfetta per te.',
+  compare_title: 'Confronta, scegli, salpa',
+  compare_text: 'Metti fianco a fianco fino a 4 imbarcazioni e individua in un attimo quella perfetta per te.',
 
   // Features table
-  features: 'Caratteristiche',
+  features: 'Specifiche',
   boat1: 'Barca 1',
   boat2: 'Barca 2',
   length: 'Lunghezza',
-  beam: 'Larghezza',
-  capacity: 'Capacità',
+  beam: 'Baglio',
+  capacity: 'Capacità persone',
   length_value1: '15 m',
   length_value2: '14 m',
   beam_value1: '5 m',
@@ -38,82 +38,109 @@ const it = {
 
   // Broker section
   broker_title: 'Sei un broker?',
-  broker_subtitle: 'Pubblica le tue barche su Batoo.',
-  broker_description: 'La piattaforma dove gli utenti scoprono, confrontano e contattano i migliori cantieri e broker, tutto in un unico posto.',
-  broker_benefit1: 'Visibilità gratuita: mostra le tue barche al pubblico giusto.',
-  broker_benefit2: 'Lead diretti: ricevi richieste senza intermediari.',
-  broker_benefit3: 'Caricamento facile: pubblica gli annunci in pochi clic o via API.',
-  broker_benefit4: 'Confronto smart: le tue barche saranno facili da paragonare.',
-  how_it_works: 'Come funziona:',
-  how_it_works_step1: 'Iscriviti come broker',
-  how_it_works_step2: 'Carica gli annunci gratuitamente',
-  how_it_works_step3: 'Ricevi richieste dirette dai buyer',
+  broker_subtitle: 'Pubblica gratis, vendi di più',
+  broker_description: 'La vetrina dove skipper e appassionati scoprono ogni giorno nuove barche dai migliori professionisti.',
+  broker_benefit1: 'Visibilità zero costi: raggiungi il pubblico giusto.',
+  broker_benefit2: 'Lead diretti: trattative senza commissioni.',
+  broker_benefit3: 'Upload rapido: inserisci annunci in pochi click o via API.',
+  broker_benefit4: 'Comparatore smart: i tuoi modelli brillano nel confronto.',
+  how_it_works: 'Come funziona',
+  how_it_works_step1: 'Registrati come broker',
+  how_it_works_step2: 'Carica gli annunci in pochi secondi',
+  how_it_works_step3: 'Ricevi richieste qualificate dai buyer',
 
   // Waitlist section
-  more_coming: 'Molto altro in arrivo.',
-  stay_on_board: 'Rimani a bordo: non perdere il lancio!',
-  email_placeholder: 'Inserisci la tua email',
+  more_coming: 'Novità in arrivo',
+  stay_on_board: 'Rimani a bordo: assicurati l’accesso anticipato!',
+  email_placeholder: 'La tua email di bordo',
 
   // JoinWaitlist
-  joinwaitlist_title: 'Sali a bordo',
+  joinwaitlist_title: 'Imbarcati per primo',
   joinwaitlist_placeholder: 'Inserisci la tua email',
-  joinwaitlist_button: 'Unisciti alla waiting list',
-  joinwaitlist_role_label: 'Sono un:',
+  joinwaitlist_button: 'Iscriviti ora',
+  joinwaitlist_role_label: 'Sei un:',
   joinwaitlist_role_user: 'Appassionato di nautica',
   joinwaitlist_role_private: 'Venditore privato',
   joinwaitlist_role_broker: 'Broker',
   joinwaitlist_role_shipyard: 'Cantiere',
 
   // Footer
-  follow_us: 'Seguici su',
-  privacy: 'Privacy · Termini e Condizioni',
-  copyright: '@Copyright Batoo 2025',
+  follow_us: 'Seguici',
+  privacy: 'Privacy · Termini',
+  copyright: '© Batoo 2025',
 
   // Pillar section
-  pillar1_title: 'Salone Nautico Sempre Aggiornato',
-  pillar1_desc: 'Un <b>salone nautico digitale</b> sempre online, dove scoprire ogni giorno <b>nuovi modelli</b>, novità dai <b>cantieri</b> e barche in vendita da <b>privati e professionisti</b>.',
-
-pillar2_title: 'Marketplace Completamente Gratuito',
-pillar2_desc: 'Pubblica i tuoi <b>annunci</b> senza alcun <b>costo</b> e metti in mostra la tua <b>barca</b> a migliaia di potenziali <b>acquirenti</b>.',
-
-pillar3_title: 'Esperienza Avanzata con Intelligenza Artificiale',
-pillar3_desc: 'Un <b>assistente</b> basato su <b>intelligenza artificiale</b> ti guida in ogni fase: dalla <b>ricerca</b> fino all’<b>acquisto</b>.',
-
-pillar4_title: 'Comparatore Intelligente',
-pillar4_desc: '<b>Confronta</b> fino a <b>4 barche</b> fianco a fianco e scopri subito le <b>differenze</b> tra le <b>caratteristiche</b>.',
-
   pillar_section_title: 'Perché scegliere Batoo',
-  pillar_section_subtitle: 'Scopri i vantaggi che rendono Batoo la piattaforma nautica più innovativa e completa',
+  pillar_section_subtitle: 'La piattaforma nautica più innovativa. Ecco perché:',
+  pillar1_title: 'Salone Nautico H24',
+  pillar1_desc: [
+    { type: 'text', value: 'Un ' },
+    { type: 'bold', value: 'salone digitale' },
+    { type: 'text', value: ' sempre online, con ' },
+    { type: 'bold', value: 'modelli freschi ogni giorno' },
+    { type: 'text', value: ' dai migliori ' },
+    { type: 'bold', value: 'cantieri' },
+    { type: 'text', value: '.' }
+  ],
+  pillar2_title: 'Marketplace gratuito',
+  pillar2_desc: [
+    { type: 'text', value: 'Pubblica i tuoi ' },
+    { type: 'bold', value: 'annunci gratis' },
+    { type: 'text', value: ' e metti in mostra la tua ' },
+    { type: 'bold', value: 'imbarcazione' },
+    { type: 'text', value: ' a migliaia di ' },
+    { type: 'bold', value: 'acquirenti' },
+    { type: 'text', value: '.' }
+  ],
+  pillar3_title: 'AI al tuo timone',
+  pillar3_desc: [
+    { type: 'text', value: 'Un ' },
+    { type: 'bold', value: 'assistente intelligente' },
+    { type: 'text', value: ' che ti guida dalla ' },
+    { type: 'bold', value: 'ricerca' },
+    { type: 'text', value: ' alla ' },
+    { type: 'bold', value: 'trattativa finale' },
+    { type: 'text', value: '.' }
+  ],
+  pillar4_title: 'Comparatore Pro',
+  pillar4_desc: [
+    { type: 'bold', value: 'Confronta' },
+    { type: 'text', value: ' fino a ' },
+    { type: 'bold', value: '4 modelli' },
+    { type: 'text', value: ' in parallelo e evidenzia subito le ' },
+    { type: 'bold', value: 'differenze chiave' },
+    { type: 'text', value: '.' }
+  ],
 
   // SlideBoats
-  
   slide_boats: [
     {
       shipyard_model: 'Cantiere | Modello',
-      price: '500.000 $',
-      tax: 'Tasse incluse',
+      price: '500.000 €',
+      tax: 'IVA inclusa',
       country: 'Italia',
     },
     {
       shipyard_model: 'Cantiere | Modello',
-      price: '1.000.000 $',
-      tax: 'Tasse incluse',
+      price: '1.000.000 €',
+      tax: 'IVA inclusa',
       country: 'Francia',
     },
     {
       shipyard_model: 'Cantiere | Modello',
-      price: '2.000.000 $',
-      tax: 'Tasse escluse',
+      price: '2.000.000 €',
+      tax: 'IVA esclusa',
       country: 'Spagna',
     },
   ],
 
-  team_title: 'Il Team Batoo',
-  team_subtitle: 'Le persone che stanno rivoluzionando la nautica digitale in Italia',
+  // Team
+  team_title: 'Il Nostro Equipaggio',
+  team_subtitle: 'Stiamo rivoluzionando la nautica digitale',
   team_members: [
     {
       name: 'Giorgio',
-      desc: 'Fondatore di Batoo. Appassionato di nautica e innovazione, guida la visione del progetto con l’obiettivo di rendere il mondo della nautica più accessibile, efficiente e digitale grazie alla tecnologia.'
+      desc: 'Fondatore, appassionato di nautica e innovazione, guida la visione del progetto con l’obiettivo di rendere il mondo della nautica più accessibile, efficiente e digitale grazie alla tecnologia.'
     },
     {
       name: 'Fabio',
@@ -135,8 +162,7 @@ pillar4_desc: '<b>Confronta</b> fino a <b>4 barche</b> fianco a fianco e scopri 
       name: 'Alessandro',
       desc: 'Esperto di business analytics e modellazione finanziaria. Supervisiona gli economics del progetto, sviluppando scenari di ricavo sostenibili e strategie per la crescita a lungo termine.'
     }
-  ]
-  ,
+  ],
 };
 
 export default it;

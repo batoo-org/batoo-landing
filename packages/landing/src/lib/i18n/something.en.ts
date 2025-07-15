@@ -1,34 +1,34 @@
 const en = {
   // Hero section
   hero_title: 'Where The Boat Show Never Ends',
-  hero_subtitle: 'Discover, compare, and connect with shipyards, brokers, and private sellers—the boat of your dreams is here.',
-  waitlist_button: 'Join the waiting list',
+  hero_subtitle: 'Discover, compare, and buy in one digital hub—your dream boat is just a click away.',
+  waitlist_button: 'Secure your spot now',
 
   // Section 1 – Gateway
-  section1_title: 'Your Gateway to the Boating World',
-  section1_text: 'Explore and compare thousands of new and pre-owned models on an intuitive platform. Smart filters steer you to the perfect boat, and you can buy or sell used boats in just a few clicks.',
-  section1_subtitle: 'Reach everyone in just a click',
-  section1_subtitle_text: 'Contact shipyards, brokers, and private sellers instantly—no hassle.',
+  section1_title: 'Your fast lane to the sea',
+  section1_text: 'Browse thousands of new and used boats on a single intuitive platform. Smart filters chart the quickest route to your perfect vessel.',
+  section1_subtitle: 'All the contacts, zero hassle',
+  section1_subtitle_text: 'Reach shipyards, brokers and private sellers in seconds and keep negotiations simple.',
 
   // Section 2 – Platform description
-  section2_text1: 'Batoo connects users with shipyards on a user-friendly platform where every boat is just a click away.',
-  section2_text2: 'AI-powered filters refine your search down to the smallest detail, helping you find the ideal vessel.',
+  section2_text1: 'Batoo seamlessly connects owners, shipyards, and brokers so every boat is one click away.',
+  section2_text2: 'AI-powered filters guide you to the ideal model down to the finest detail.',
 
   // Contact section
-  contact_title: 'Connect with shipyards and brokers in one click.',
-  contact_text: 'Get all the information you need right away—starting a conversation has never been easier.',
+  contact_title: 'Questions? Ask in one click',
+  contact_text: 'Instantly get spec sheets, quotes, and sea trials: it only takes seconds to start the conversation.',
 
   // Compare section
-  compare_title: 'Comparing boats has never been simpler',
-  compare_text: 'Line up to 4 boats side by side and choose the one that fits you best.',
+  compare_title: 'Compare, choose, cast off',
+  compare_text: 'Line up up to 4 boats side by side and spot the perfect match in a flash.',
 
   // Features table
-  features: 'Features',
+  features: 'Specs',
   boat1: 'Boat 1',
   boat2: 'Boat 2',
   length: 'Length',
   beam: 'Beam',
-  capacity: 'Capacity',
+  capacity: 'People capacity',
   length_value1: '15 m',
   length_value2: '14 m',
   beam_value1: '5 m',
@@ -38,26 +38,26 @@ const en = {
 
   // Broker section
   broker_title: 'Are you a broker?',
-  broker_subtitle: 'List your boats on Batoo.',
-  broker_description: 'The platform where users discover, compare, and contact top shipyards and brokers—all in one place.',
-  broker_benefit1: 'Free visibility: showcase your boats to the right audience.',
-  broker_benefit2: 'Direct leads: receive inquiries with no middlemen.',
-  broker_benefit3: 'Easy uploads: add listings in a few clicks or via API.',
-  broker_benefit4: 'Smart comparison: make it effortless for users to compare your boats.',
-  how_it_works: 'How it works:',
-  how_it_works_step1: 'Sign up for free',
-  how_it_works_step2: 'Upload listings or connect via API',
-  how_it_works_step3: 'Receive direct buyer inquiries',
+  broker_subtitle: 'Publish for free, sell more',
+  broker_description: 'The showcase where skippers and enthusiasts discover new boats from top professionals every day.',
+  broker_benefit1: 'Zero-cost visibility: reach the right audience.',
+  broker_benefit2: 'Direct leads: deals with no commissions.',
+  broker_benefit3: 'Fast upload: add listings in a few clicks or via API.',
+  broker_benefit4: 'Smart comparison: your models shine in side-by-side views.',
+  how_it_works: 'How it works',
+  how_it_works_step1: 'Sign up as a broker',
+  how_it_works_step2: 'Upload listings in seconds',
+  how_it_works_step3: 'Receive qualified enquiries from buyers',
 
   // Waitlist section
-  more_coming: 'More features on the way.',
-  stay_on_board: 'Stay on board—don’t miss the launch!',
-  email_placeholder: 'Enter your email',
+  more_coming: 'More innovations on the way',
+  stay_on_board: 'Stay on board: get early access!',
+  email_placeholder: 'Your email',
 
   // JoinWaitlist
-  joinwaitlist_title: 'Hop on board',
+  joinwaitlist_title: 'Hop on board now',
   joinwaitlist_placeholder: 'Enter your email',
-  joinwaitlist_button: 'Join the waiting list',
+  joinwaitlist_button: 'Join the waitlist',
   joinwaitlist_role_label: 'I am a:',
   joinwaitlist_role_user: 'Boating enthusiast',
   joinwaitlist_role_private: 'Private seller',
@@ -65,76 +65,104 @@ const en = {
   joinwaitlist_role_shipyard: 'Shipyard',
 
   // Footer
-  follow_us: 'Follow us on',
-  privacy: 'Privacy · Terms & Conditions',
-  copyright: '@Copyright Batoo 2025',
+  follow_us: 'Follow us',
+  privacy: 'Privacy · Terms',
+  copyright: '© Batoo 2025',
 
   // Pillar section
-pillar1_title: 'Always-Up-to-Date Boat Show',
-pillar1_desc: 'A <b>digital boat show</b> that’s always online, where you can discover <b>new models</b> every day, updates from <b>shipyards</b>, and boats for sale from <b>private sellers</b> and <b>professionals</b>.',
-
-pillar2_title: 'Completely Free Marketplace',
-pillar2_desc: 'List your <b>ads</b> at no <b>cost</b> and showcase your <b>boat</b> to thousands of potential <b>buyers</b>.',
-
-pillar3_title: 'Advanced AI-Powered Experience',
-pillar3_desc: 'An <b>AI assistant</b> that supports you at every stage — from <b>searching</b> to <b>buying</b>.',
-
-pillar4_title: 'Smart Comparison Tool',
-pillar4_desc: '<b>Compare</b> up to <b>4 boats</b> side by side and instantly spot the <b>differences</b> in their <b>features</b>.',
   pillar_section_title: 'Why choose Batoo',
-  pillar_section_subtitle: 'Discover the advantages that make Batoo the most innovative and complete boating platform',
+  pillar_section_subtitle: 'The most innovative boating platform. Here’s why:',
+  pillar1_title: '24/7 Boat Show',
+  pillar1_desc: [
+    { type: 'text', value: 'A ' },
+    { type: 'bold', value: 'digital boat show' },
+    { type: 'text', value: ' that’s always online, with ' },
+    { type: 'bold', value: 'fresh models every day' },
+    { type: 'text', value: ' from leading ' },
+    { type: 'bold', value: 'shipyards' },
+    { type: 'text', value: '.' }
+  ],
+  pillar2_title: 'Free marketplace',
+  pillar2_desc: [
+    { type: 'text', value: 'Publish your ' },
+    { type: 'bold', value: 'listings for free' },
+    { type: 'text', value: ' and showcase your ' },
+    { type: 'bold', value: 'boat' },
+    { type: 'text', value: ' to thousands of ' },
+    { type: 'bold', value: 'buyers' },
+    { type: 'text', value: '.' }
+  ],
+  pillar3_title: 'AI at the helm',
+  pillar3_desc: [
+    { type: 'text', value: 'An ' },
+    { type: 'bold', value: 'intelligent assistant' },
+    { type: 'text', value: ' that steers you from ' },
+    { type: 'bold', value: 'search' },
+    { type: 'text', value: ' to the ' },
+    { type: 'bold', value: 'final deal' },
+    { type: 'text', value: '.' }
+  ],
+  pillar4_title: 'Pro comparision tool',
+  pillar4_desc: [
+    { type: 'bold', value: 'Compare' },
+    { type: 'text', value: ' up to ' },
+    { type: 'bold', value: '4 models' },
+    { type: 'text', value: ' in parallel and instantly spotlight the ' },
+    { type: 'bold', value: 'key differences' },
+    { type: 'text', value: '.' }
+  ],
 
   // SlideBoats
-  
   slide_boats: [
     {
       shipyard_model: 'Shipyard | Model',
-      price: '$500,000',
-      tax: 'Taxes included',
+      price: '€500,000',
+      tax: 'VAT included',
       country: 'Italy',
     },
     {
       shipyard_model: 'Shipyard | Model',
-      price: '$1,000,000',
-      tax: 'Taxes included',
+      price: '€1,000,000',
+      tax: 'VAT included',
       country: 'France',
     },
     {
       shipyard_model: 'Shipyard | Model',
-      price: '$2,000,000',
-      tax: 'Taxes excluded',
+      price: '€2,000,000',
+      tax: 'VAT excluded',
       country: 'Spain',
     },
   ],
-  team_title: 'The Batoo Team',
-  team_subtitle: 'The people revolutionizing digital boating in Italy',
+
+  // Team
+  team_title: 'Our Crew',
+  team_subtitle: 'The people reshaping digital boating',
   team_members: [
     {
       name: 'Giorgio',
-      desc: 'Founder of Batoo. A passionate sailor and innovator, he leads the project’s vision to make the boating world more accessible, efficient, and digitally powered through smart technology.'
+      desc: 'Founder of Batoo. A boating and innovation enthusiast, he shapes the project’s vision to make the nautical world more accessible, efficient, and digital through cutting-edge technology.'
     },
     {
       name: 'Fabio',
-      desc: 'Full-stack developer with experience in blockchain and web3. He manages the entire development cycle—from user interface to backend APIs—ensuring speed, stability, and innovation across the platform.'
+      desc: 'Full-stack developer with blockchain and web3 experience. He oversees the entire development cycle—from user interface to APIs—ensuring the platform stays stable, fast, and forward-thinking.'
     },
     {
       name: 'Federico',
-      desc: 'Full-stack developer specialized in building scalable and secure backend systems. He enhances the platform’s performance, ensuring a seamless and reliable experience for every type of user.'
+      desc: 'Full-stack developer specialised in secure, scalable back-ends. He fine-tunes performance so every user enjoys a smooth, reliable experience at any traffic level.'
     },
     {
       name: 'Giulio',
-      desc: 'A sailing enthusiast and industry insider. He nurtures relationships with shipyards, brokers, and stakeholders to ensure Batoo offers a top-tier and up-to-date nautical catalog.'
+      desc: 'Sailing aficionado and industry insider. He forges relationships with shipyards, brokers, and stakeholders to keep Batoo’s boat catalogue fresh, comprehensive, and top-quality.'
     },
     {
       name: 'Camilla',
-      desc: 'Marketing lead focused on community and organic growth. She orchestrates multichannel campaigns, analyzes market data, and drives Batoo’s positioning as a leader in the boating industry.'
+      desc: 'Marketing lead focused on community and organic growth. She runs multichannel campaigns, mines data insights, and positions Batoo as the reference point in the sector.'
     },
     {
       name: 'Alessandro',
-      desc: 'Business analytics and financial modeling expert. He oversees the project’s economics, crafting sustainable revenue models and long-term growth strategies to support Batoo’s success.'
+      desc: 'Business analytics and financial-modelling expert. He steers project economics, crafting sustainable revenue scenarios and strategies for long-term expansion.'
     }
-  ]
-  ,
+  ],
 };
 
 export default en;
