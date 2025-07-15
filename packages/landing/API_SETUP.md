@@ -27,8 +27,8 @@ The waitlist functionality calls the following endpoint:
 
 ```typescript
 interface WhitelistRequest {
-  email: string;  // Required, must be valid email format
-  type: 'user' | 'private' | 'broker' | 'shipyard';  // Required, only these 4 values allowed
+	email: string; // Required, must be valid email format
+	type: 'user' | 'private' | 'broker' | 'shipyard'; // Required, only these 4 values allowed
 }
 ```
 
@@ -36,8 +36,8 @@ interface WhitelistRequest {
 
 ```typescript
 interface WhitelistResponse {
-  success: boolean;
-  message?: string;
+	success: boolean;
+	message?: string;
 }
 ```
 
@@ -51,4 +51,4 @@ VITE_BACKEND_URL=http://localhost:3000
 
 ### Production
 
-For production deployment, make sure to set the correct production backend URL in your environment variables or deployment configuration. 
+For production deployment, make sure to set the correct production backend URL in your environment variables or deployment configuration.
