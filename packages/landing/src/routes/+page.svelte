@@ -5,6 +5,7 @@
 
 	import en from '$lib/i18n/something.en';
 	import it from '$lib/i18n/something.it';
+	import { whitelistService, type WhitelistRequest } from '$lib/api/whitelist';
 	// import { LL } from '$lib/i18n/i18n-svelte';
 	// import ContactShipyard from '$components/hero/ContactShipyard.svelte';
 	import JoinWaitlist from '$components/hero/JoinWaitlist.svelte';
@@ -14,6 +15,9 @@
 	let email = '';
 	let role = 'user';
 	let lang: 'en' | 'it' = 'en';
+	let isLoading = false;
+	let errorMessage = '';
+	let successMessage = '';
 	const translations = { en, it };
 
 	onMount(() => {
@@ -26,6 +30,37 @@
 			}
 		}
 	});
+
+	async function handleWaitlistSubmit() {
+		if (!email || !role) return;
+
+		isLoading = true;
+		errorMessage = '';
+		successMessage = '';
+
+		try {
+			const requestData: WhitelistRequest = {
+				email,
+				type: role as 'user' | 'private' | 'broker' | 'shipyard',
+			};
+
+			await whitelistService.joinWaitlist(requestData);
+
+			// Success - clear form and show success message
+			email = '';
+			role = 'user';
+			successMessage =
+				lang === 'it' ? 'Iscrizione completata con successo!' : 'Successfully joined the waitlist!';
+		} catch (error) {
+			console.error('Failed to join waitlist:', error);
+			errorMessage =
+				lang === 'it'
+					? "Errore durante l'iscrizione. Riprova più tardi."
+					: 'Error joining waitlist. Please try again later.';
+		} finally {
+			isLoading = false;
+		}
+	}
 
 	let parallaxY = 0;
 
@@ -470,8 +505,9 @@
 				<div class="relative">
 					<select
 						id="waitlist-role"
-						class="w-full appearance-none rounded-full border border-black border-opacity-50 bg-white px-4 py-3 pr-10 text-black shadow-sm transition-all duration-200 focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+						class="w-full appearance-none rounded-full border border-black border-opacity-50 bg-white px-4 py-3 pr-10 text-black shadow-sm transition-all duration-200 focus:border-black focus:outline-none focus:ring-2 focus:ring-black disabled:opacity-50"
 						bind:value={role}
+						disabled={isLoading}
 					>
 						<option value="user">{translations[lang].joinwaitlist_role_user}</option>
 						<option value="private">{translations[lang].joinwaitlist_role_private}</option>
@@ -493,15 +529,40 @@
 				<div class="w-full">
 					<input
 						type="email"
-						class="w-full rounded-full border border-black border-opacity-50 bg-white px-4 py-3 text-black shadow-sm transition-all duration-200 placeholder:text-neutral-500 focus:border-black focus:outline-none focus:ring-2 focus:ring-black"
+						class="w-full rounded-full border border-black border-opacity-50 bg-white px-4 py-3 text-black shadow-sm transition-all duration-200 placeholder:text-neutral-500 focus:border-black focus:outline-none focus:ring-2 focus:ring-black disabled:opacity-50"
 						placeholder={translations[lang].email_placeholder}
 						bind:value={email}
+						disabled={isLoading}
 					/>
 				</div>
 				<button
 					class="w-full rounded-full bg-black px-4 py-3 text-center text-white disabled:opacity-50"
-					disabled={!email || !role}>{translations[lang].waitlist_button}</button
+					disabled={!email || !role || isLoading}
+					on:click={handleWaitlistSubmit}
 				>
+					{#if isLoading}
+						<span class="inline-flex items-center gap-2">
+							<svg class="h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">
+								<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"
+								></circle>
+								<path
+									class="opacity-75"
+									fill="currentColor"
+									d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+								></path>
+							</svg>
+							{lang === 'it' ? 'Iscrizione in corso...' : 'Joining...'}
+						</span>
+					{:else}
+						{translations[lang].waitlist_button}
+					{/if}
+				</button>
+				{#if errorMessage}
+					<p class="mt-2 text-sm text-red-500">{errorMessage}</p>
+				{/if}
+				{#if successMessage}
+					<p class="mt-2 text-sm text-green-500">{successMessage}</p>
+				{/if}
 			</div>
 		</div>
 	</div>
