@@ -92,6 +92,16 @@
 	}
 </script>
 
+<svelte:head>
+	<title>{translations[lang].hero_title} • Batoo</title>
+
+	<!-- Meta description -->
+	<meta
+		name="description"
+		content="Scopri e confronta migliaia di barche nuove e usate, contatta cantieri e broker in pochi clic. Unisciti alla waiting list di Batoo, il salone nautico digitale sempre aperto."
+	/>
+</svelte:head>
+
 <section class="relative flex min-h-screen flex-col overflow-hidden">
 	<img class="absolute left-0 top-0 h-full w-full object-cover" src="assets/boat-bg.webp" alt="" />
 	<div class="relative flex flex-1 bg-[rgba(18,26,84,0.77)] px-4 py-12 backdrop-blur-xl lg:px-12">
