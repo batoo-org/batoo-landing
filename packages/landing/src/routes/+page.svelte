@@ -103,7 +103,7 @@
 </svelte:head>
 
 <section class="relative flex min-h-screen flex-col overflow-hidden">
-	<img class="absolute left-0 top-0 h-full w-full object-cover" src="assets/boat-bg.webp" alt="" />
+	<img class="absolute left-0 top-0 h-full w-full object-cover" src="assets/boat-slide-1.webp" alt="" />
 	<div class="relative flex flex-1 bg-[rgba(18,26,84,0.77)] px-4 py-12 backdrop-blur-xl lg:px-12">
 		<BatooLogo
 			class="absolute -right-12 -top-12 hidden rotate-[14deg] opacity-20 lg:-right-24 lg:top-20 lg:block lg:w-[700px]"
