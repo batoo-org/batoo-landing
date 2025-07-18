@@ -100,6 +100,23 @@
 		name="description"
 		content="Scopri e confronta migliaia di barche nuove e usate, contatta cantieri e broker in pochi clic. Unisciti alla waiting list di Batoo, il salone nautico digitale sempre aperto."
 	/>
+	<!-- SEO & Social Preview -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{translations[lang].hero_title} • Batoo" />
+	<meta
+		property="og:description"
+		content="Scopri e confronta migliaia di barche nuove e usate, contatta cantieri e broker in pochi clic. Unisciti alla waiting list di Batoo, il salone nautico digitale sempre aperto."
+	/>
+	<meta property="og:image" content="/assets/batoo.webp" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="{translations[lang].hero_title} • Batoo" />
+	<meta
+		name="twitter:description"
+		content="Scopri e confronta migliaia di barche nuove e usate, contatta cantieri e broker in pochi clic. Unisciti alla waiting list di Batoo, il salone nautico digitale sempre aperto."
+	/>
+	<meta name="twitter:image" content="/assets/batoo.webp" />
 </svelte:head>
 
 <section class="relative flex min-h-screen flex-col overflow-hidden">
