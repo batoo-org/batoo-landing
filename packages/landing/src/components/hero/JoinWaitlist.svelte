@@ -67,7 +67,7 @@
 			</clipPath>
 		</defs>
 	</svg>
-	<span class="ml-2 text-xl font-medium">{translations[lang].joinwaitlist_title}</span>
+	<span class="text-xl font-medium">{translations[lang].joinwaitlist_title}</span>
 
 	{#if errorMessage}
 		<p class="mt-2 text-sm text-red-500">{errorMessage}</p>
@@ -136,11 +136,13 @@
 
 <style>
 	.wrapper {
-		clip-path: url(#join-waitlist);
+		border-radius: 1rem; /* rounded-xl */
+		/* clip-path rimossa su mobile */
 	}
 	@media screen and (min-width: 768px) {
 		.wrapper {
 			clip-path: url(#join-waitlist-md);
+			border-radius: 1.5rem; /* rounded-3xl */
 		}
 	}
 </style>
