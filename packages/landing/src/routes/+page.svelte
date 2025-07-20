@@ -107,16 +107,16 @@
 		property="og:description"
 		content="Scopri e confronta migliaia di barche nuove e usate, contatta cantieri e broker in pochi clic. Unisciti alla waiting list di Batoo, il salone nautico digitale sempre aperto."
 	/>
-	<meta property="og:image" content="/assets/batoo.webp" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
+	<meta property="og:image" content="/android-chrome-512x512.png" />
+	<meta property="og:image:width" content="512" />
+	<meta property="og:image:height" content="512" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="{translations[lang].hero_title} • Batoo" />
 	<meta
 		name="twitter:description"
 		content="Scopri e confronta migliaia di barche nuove e usate, contatta cantieri e broker in pochi clic. Unisciti alla waiting list di Batoo, il salone nautico digitale sempre aperto."
 	/>
-	<meta name="twitter:image" content="/assets/batoo.webp" />
+	<meta name="twitter:image" content="/android-chrome-512x512.png" />
 </svelte:head>
 
 <section class="relative flex min-h-screen flex-col overflow-hidden">
