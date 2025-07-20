@@ -271,7 +271,7 @@
 >
 	<div class="bg-primary-900/70 absolute inset-0"></div>
 	<!-- Content -->
-	<div class="relative z-10 mx-auto flex aspect-video w-full max-w-7xl items-center justify-center px-6 lg:px-12">
+	<div class="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-center px-6 py-16 lg:px-12 lg:py-24">
 		<div
 			class="hover:shadow-3xl my-16 w-full max-w-xl rounded-2xl border border-white/60 bg-white p-8 shadow-2xl backdrop-blur-md transition-all duration-500"
 			transition:fade
