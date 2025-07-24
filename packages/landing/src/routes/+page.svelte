@@ -9,6 +9,7 @@
 	// import { LL } from '$lib/i18n/i18n-svelte';
 	// import ContactShipyard from '$components/hero/ContactShipyard.svelte';
 	import JoinWaitlist from '$components/hero/JoinWaitlist.svelte';
+	import BrokerSignup from '$components/hero/BrokerSignup.svelte';
 	import SlideBoats from '$components/hero/SlideBoats.svelte';
 	import BatooLogo from '$components/svg/BatooLogo.svelte';
 
@@ -273,49 +274,55 @@
 	<!-- Content -->
 	<div class="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-center px-6 py-16 lg:px-12 lg:py-24">
 		<div
-			class="hover:shadow-3xl my-16 w-full max-w-xl rounded-2xl border border-white/60 bg-white p-8 shadow-2xl backdrop-blur-md transition-all duration-500"
+			class="hover:shadow-3xl my-16 w-full max-w-xl overflow-hidden rounded-2xl border-t border-white/60 bg-white shadow-2xl backdrop-blur-md transition-all duration-500"
 			transition:fade
 		>
-			<h2
-				class="flex flex-wrap items-center gap-3 text-3xl font-extrabold leading-tight text-primary-950 md:text-5xl"
-			>
-				<span>{translations[lang].broker_title}</span>
-				<br class="hidden lg:block" />
-				<span>{translations[lang].broker_subtitle}</span>
-			</h2>
-			<p class="mt-8 text-base text-lg md:text-xl">
-				{translations[lang].broker_description}
-			</p>
-			<div class="mt-6 space-y-2">
-				<div>
-					<b>{translations[lang].broker_benefit1.split(':')[0]}:</b>{translations[lang].broker_benefit1.split(
-						':'
-					)[1]}
+			<!-- Contenuto bianco -->
+			<div class="p-8">
+				<h2
+					class="flex flex-wrap items-center gap-3 text-3xl font-extrabold leading-tight text-primary-950 md:text-5xl"
+				>
+					<span>{translations[lang].broker_title}</span>
+					<br class="hidden lg:block" />
+					<span>{translations[lang].broker_subtitle}</span>
+				</h2>
+				<p class="mt-8 text-base text-lg md:text-xl">
+					{translations[lang].broker_description}
+				</p>
+				<div class="mt-6 space-y-2">
+					<div>
+						<b>{translations[lang].broker_benefit1.split(':')[0]}:</b>{translations[
+							lang
+						].broker_benefit1.split(':')[1]}
+					</div>
+					<div>
+						<b>{translations[lang].broker_benefit2.split(':')[0]}:</b>{translations[
+							lang
+						].broker_benefit2.split(':')[1]}
+					</div>
+					<div>
+						<b>{translations[lang].broker_benefit3.split(':')[0]}:</b>{translations[
+							lang
+						].broker_benefit3.split(':')[1]}
+					</div>
+					<div>
+						<b>{translations[lang].broker_benefit4.split(':')[0]}:</b>{translations[
+							lang
+						].broker_benefit4.split(':')[1]}
+					</div>
 				</div>
-				<div>
-					<b>{translations[lang].broker_benefit2.split(':')[0]}:</b>{translations[lang].broker_benefit2.split(
-						':'
-					)[1]}
-				</div>
-				<div>
-					<b>{translations[lang].broker_benefit3.split(':')[0]}:</b>{translations[lang].broker_benefit3.split(
-						':'
-					)[1]}
-				</div>
-				<div>
-					<b>{translations[lang].broker_benefit4.split(':')[0]}:</b>{translations[lang].broker_benefit4.split(
-						':'
-					)[1]}
+				<div class="mt-6 rounded-xl bg-neutral-100 p-4">
+					<div class="mb-2 text-base font-semibold text-primary-700">{translations[lang].how_it_works}</div>
+					<ol class="list-inside list-decimal space-y-2 text-lg font-semibold">
+						<li>{translations[lang].how_it_works_step1}</li>
+						<li>{translations[lang].how_it_works_step2}</li>
+						<li>{translations[lang].how_it_works_step3}</li>
+					</ol>
 				</div>
 			</div>
-			<div class="mt-6 rounded-xl bg-neutral-100 p-4">
-				<div class="mb-2 text-base font-semibold text-primary-700">{translations[lang].how_it_works}</div>
-				<ol class="list-inside list-decimal space-y-2 text-lg font-semibold">
-					<li>{translations[lang].how_it_works_step1}</li>
-					<li>{translations[lang].how_it_works_step2}</li>
-					<li>{translations[lang].how_it_works_step3}</li>
-				</ol>
-			</div>
+
+			<!-- Form di iscrizione broker - parte blu -->
+			<BrokerSignup />
 		</div>
 	</div>
 </section>

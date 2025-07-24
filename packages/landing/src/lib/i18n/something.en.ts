@@ -60,6 +60,11 @@ const en = {
   joinwaitlist_button: 'Join the waitlist',
   joinwaitlist_role_label: 'I am a:',
   joinwaitlist_role_user: 'Boating enthusiast',
+
+  // BrokerSignup
+  broker_signup_title: 'Sign up as broker',
+  broker_signup_placeholder: 'Enter your email',
+  broker_signup_button: 'Sign up now',
   joinwaitlist_role_private: 'Private seller',
   joinwaitlist_role_broker: 'Broker',
   joinwaitlist_role_shipyard: 'Shipyard',
