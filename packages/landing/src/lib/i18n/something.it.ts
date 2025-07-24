@@ -63,7 +63,7 @@ const it = {
 
   // BrokerSignup
   broker_signup_title: 'Iscriviti come broker',
-  broker_signup_subtitle: 'Iscriviti qui per ricevere l\'accesso anticipato alla piattaforma broker',
+  broker_signup_subtitle: 'Iscriviti qui per ricevere l\'accesso anticipato alla piattaforma broker e iniziare a pubblicare i tuoi annunci gratuitamente',
   broker_signup_placeholder: 'Inserisci la tua email',
   broker_signup_button: 'Iscriviti ora',
   joinwaitlist_role_private: 'Venditore privato',

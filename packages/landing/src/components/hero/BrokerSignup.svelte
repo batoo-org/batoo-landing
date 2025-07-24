@@ -52,8 +52,7 @@
 	<div class="mb-4 text-center">
 		<span class="text-2xl font-bold text-white">{translations[lang].broker_signup_title}</span>
 		<p class="mt-2 text-sm text-white">
-			Iscriviti qui per ricevere l'accesso anticipato alla piattaforma broker e iniziare a pubblicare i tuoi
-			annunci gratuitamente
+			{translations[lang].broker_signup_subtitle}
 		</p>
 	</div>
 

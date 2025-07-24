@@ -63,6 +63,7 @@ const en = {
 
   // BrokerSignup
   broker_signup_title: 'Sign up as broker',
+  broker_signup_subtitle: 'Sign up here to get early access to the broker platform and start publishing your listings for free',
   broker_signup_placeholder: 'Enter your email',
   broker_signup_button: 'Sign up now',
   joinwaitlist_role_private: 'Private seller',
