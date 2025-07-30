@@ -77,7 +77,7 @@ const en = {
 
   // Privacy Policy
   privacy_title: 'Privacy Policy',
-  privacy_last_updated: 'Last updated: January 2025',
+  privacy_last_updated: 'Last updated: July 2025',
   privacy_intro: 'This Privacy Policy describes how Batoo ("we", "us", or "our") collects, uses, and protects your information when you join our waitlist.',
   privacy_collection_title: 'Information We Collect',
   privacy_collection_text: 'When you join our waitlist, we collect your email address and the type of user you are (boating enthusiast, private seller, broker, or shipyard).',
