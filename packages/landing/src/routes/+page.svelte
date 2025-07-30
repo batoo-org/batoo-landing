@@ -623,7 +623,9 @@
 	</div>
 	<div class="w-full border-t border-white opacity-20"></div>
 	<div class="flex flex-col items-center justify-between gap-8 text-white lg:flex-row">
-		<span>{translations[lang].privacy}</span>
+		<a href="/privacy" class="cursor-pointer transition-opacity hover:opacity-80">
+			<span>{translations[lang].privacy}</span>
+		</a>
 		<span>{translations[lang].copyright}</span>
 	</div>
 </section>

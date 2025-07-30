@@ -75,6 +75,22 @@ const en = {
   privacy: 'Privacy · Terms',
   copyright: '© Batoo 2025',
 
+  // Privacy Policy
+  privacy_title: 'Privacy Policy',
+  privacy_last_updated: 'Last updated: January 2025',
+  privacy_intro: 'This Privacy Policy describes how Batoo ("we", "us", or "our") collects, uses, and protects your information when you join our waitlist.',
+  privacy_collection_title: 'Information We Collect',
+  privacy_collection_text: 'When you join our waitlist, we collect your email address and the type of user you are (boating enthusiast, private seller, broker, or shipyard).',
+  privacy_use_title: 'How We Use Your Information',
+  privacy_use_text: 'We use your email address to send you updates about our platform launch and early access opportunities. We use your user type to provide you with relevant information and features.',
+  privacy_sharing_title: 'Information Sharing',
+  privacy_sharing_text: 'We do not sell, trade, or otherwise transfer your personal information to third parties. Your information is used solely for the purpose of managing our waitlist and communicating with you about Batoo.',
+  privacy_security_title: 'Data Security',
+  privacy_security_text: 'We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.',
+  privacy_contact_title: 'Contact Us',
+  privacy_contact_text: 'If you have any questions about this Privacy Policy, please contact us at privacy@batoo.com.',
+  back_to_home: 'Back to Home',
+
   // Pillar section
   pillar_section_title: 'Why choose Batoo',
   pillar_section_subtitle: 'The most innovative boating platform. Here’s why:',

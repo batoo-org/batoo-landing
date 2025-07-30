@@ -75,6 +75,22 @@ const it = {
   privacy: 'Privacy · Termini',
   copyright: '© Batoo 2025',
 
+  // Privacy Policy
+  privacy_title: 'Informativa sulla Privacy',
+  privacy_last_updated: 'Ultimo aggiornamento: Luglio 2025',
+  privacy_intro: 'Questa Informativa sulla Privacy descrive come Batoo ("noi", "ci", o "nostro") raccoglie, utilizza e protegge le tue informazioni quando ti iscrivi alla nostra waiting list.',
+  privacy_collection_title: 'Informazioni che Raccogliamo',
+  privacy_collection_text: 'Quando ti iscrivi alla nostra waiting list, raccogliamo il tuo indirizzo email e il tipo di utente che sei (appassionato di nautica, venditore privato, broker o cantiere).',
+  privacy_use_title: 'Come Utilizziamo le Tue Informazioni',
+  privacy_use_text: 'Utilizziamo il tuo indirizzo email per inviarti aggiornamenti sul lancio della nostra piattaforma e opportunità di accesso anticipato. Utilizziamo il tuo tipo di utente per fornirti informazioni e funzionalità pertinenti.',
+  privacy_sharing_title: 'Condivisione delle Informazioni',
+  privacy_sharing_text: 'Non vendiamo, scambiamo o trasferiamo le tue informazioni personali a terzi. Le tue informazioni sono utilizzate esclusivamente per gestire la nostra waiting list e comunicare con te riguardo a Batoo.',
+  privacy_security_title: 'Sicurezza dei Dati',
+  privacy_security_text: 'Implementiamo misure di sicurezza appropriate per proteggere le tue informazioni personali da accesso non autorizzato, alterazione, divulgazione o distruzione.',
+  privacy_contact_title: 'Contattaci',
+  privacy_contact_text: 'Se hai domande su questa Informativa sulla Privacy, contattaci all\'indirizzo privacy@batoo.com.',
+  back_to_home: 'Torna alla Home',
+
   // Pillar section
   pillar_section_title: 'Perché scegliere Batoo',
   pillar_section_subtitle: 'La piattaforma nautica più innovativa. Ecco perché:',

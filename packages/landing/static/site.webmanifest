@@ -1,9 +1,7 @@
 {
 	"name": "Batoo - Il Salone Nautico Digitale",
 	"short_name": "Batoo",
-	"icons": [
-		{ "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
-	],
+	"icons": [{ "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }],
 	"theme_color": "#121A54",
 	"background_color": "#ffffff",
 	"display": "standalone"
